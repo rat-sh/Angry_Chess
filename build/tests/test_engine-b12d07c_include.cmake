@@ -1,0 +1,5 @@
+if(EXISTS "/home/r/game/build/tests/test_engine-b12d07c_tests.cmake")
+  include("/home/r/game/build/tests/test_engine-b12d07c_tests.cmake")
+else()
+  add_test(test_engine_NOT_BUILT-b12d07c test_engine_NOT_BUILT-b12d07c)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/r/game/build/tests/test_angry_chess-b12d07c_tests.cmake")
+  include("/home/r/game/build/tests/test_angry_chess-b12d07c_tests.cmake")
+else()
+  add_test(test_angry_chess_NOT_BUILT-b12d07c test_angry_chess_NOT_BUILT-b12d07c)
+endif()

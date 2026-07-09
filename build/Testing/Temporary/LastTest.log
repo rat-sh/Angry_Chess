@@ -1,0 +1,843 @@
+Start testing: Jul 08 13:17 IST
+----------------------------------------------------------
+1/42 Testing: BoardState: initial state is empty
+1/42 Test: BoardState: initial state is empty
+Command: "/home/r/game/build/tests/test_engine" "BoardState: initial state is empty"
+Directory: /home/r/game/build/tests
+"BoardState: initial state is empty" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: initial state is empty"
+Randomness seeded to: 3324823362
+===============================================================================
+All tests passed (64 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: initial state is empty" end time: Jul 08 13:17 IST
+"BoardState: initial state is empty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/42 Testing: BoardState: setCell and typeAt
+2/42 Test: BoardState: setCell and typeAt
+Command: "/home/r/game/build/tests/test_engine" "BoardState: setCell and typeAt"
+Directory: /home/r/game/build/tests
+"BoardState: setCell and typeAt" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: setCell and typeAt"
+Randomness seeded to: 898845572
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: setCell and typeAt" end time: Jul 08 13:17 IST
+"BoardState: setCell and typeAt" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/42 Testing: BoardState: clearCell
+3/42 Test: BoardState: clearCell
+Command: "/home/r/game/build/tests/test_engine" "BoardState: clearCell"
+Directory: /home/r/game/build/tests
+"BoardState: clearCell" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: clearCell"
+Randomness seeded to: 4080837443
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: clearCell" end time: Jul 08 13:17 IST
+"BoardState: clearCell" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/42 Testing: BoardState: applyMove basic move
+4/42 Test: BoardState: applyMove basic move
+Command: "/home/r/game/build/tests/test_engine" "BoardState: applyMove basic move"
+Directory: /home/r/game/build/tests
+"BoardState: applyMove basic move" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: applyMove basic move"
+Randomness seeded to: 1764169623
+===============================================================================
+All tests passed (7 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: applyMove basic move" end time: Jul 08 13:17 IST
+"BoardState: applyMove basic move" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/42 Testing: BoardState: applyMove capture removes enemy piece
+5/42 Test: BoardState: applyMove capture removes enemy piece
+Command: "/home/r/game/build/tests/test_engine" "BoardState: applyMove capture removes enemy piece"
+Directory: /home/r/game/build/tests
+"BoardState: applyMove capture removes enemy piece" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: applyMove capture removes enemy piece"
+Randomness seeded to: 4060575562
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: applyMove capture removes enemy piece" end time: Jul 08 13:17 IST
+"BoardState: applyMove capture removes enemy piece" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/42 Testing: BoardState: applyMove promotion
+6/42 Test: BoardState: applyMove promotion
+Command: "/home/r/game/build/tests/test_engine" "BoardState: applyMove promotion"
+Directory: /home/r/game/build/tests
+"BoardState: applyMove promotion" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: applyMove promotion"
+Randomness seeded to: 2851789231
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: applyMove promotion" end time: Jul 08 13:17 IST
+"BoardState: applyMove promotion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/42 Testing: BoardState: findFirst locates king
+7/42 Test: BoardState: findFirst locates king
+Command: "/home/r/game/build/tests/test_engine" "BoardState: findFirst locates king"
+Directory: /home/r/game/build/tests
+"BoardState: findFirst locates king" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: findFirst locates king"
+Randomness seeded to: 1295673380
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: findFirst locates king" end time: Jul 08 13:17 IST
+"BoardState: findFirst locates king" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/42 Testing: BoardState: applyMove flips active player
+8/42 Test: BoardState: applyMove flips active player
+Command: "/home/r/game/build/tests/test_engine" "BoardState: applyMove flips active player"
+Directory: /home/r/game/build/tests
+"BoardState: applyMove flips active player" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "BoardState: applyMove flips active player"
+Randomness seeded to: 2439804911
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BoardState: applyMove flips active player" end time: Jul 08 13:17 IST
+"BoardState: applyMove flips active player" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/42 Testing: Position: algebraic notation
+9/42 Test: Position: algebraic notation
+Command: "/home/r/game/build/tests/test_engine" "Position: algebraic notation"
+Directory: /home/r/game/build/tests
+"Position: algebraic notation" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "Position: algebraic notation"
+Randomness seeded to: 3717553284
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Position: algebraic notation" end time: Jul 08 13:17 IST
+"Position: algebraic notation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/42 Testing: EventBus: subscribe and publish
+10/42 Test: EventBus: subscribe and publish
+Command: "/home/r/game/build/tests/test_engine" "EventBus: subscribe and publish"
+Directory: /home/r/game/build/tests
+"EventBus: subscribe and publish" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "EventBus: subscribe and publish"
+Randomness seeded to: 3684279513
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EventBus: subscribe and publish" end time: Jul 08 13:17 IST
+"EventBus: subscribe and publish" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/42 Testing: EventBus: multiple subscribers
+11/42 Test: EventBus: multiple subscribers
+Command: "/home/r/game/build/tests/test_engine" "EventBus: multiple subscribers"
+Directory: /home/r/game/build/tests
+"EventBus: multiple subscribers" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "EventBus: multiple subscribers"
+Randomness seeded to: 1792801704
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EventBus: multiple subscribers" end time: Jul 08 13:17 IST
+"EventBus: multiple subscribers" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/42 Testing: EventBus: unsubscribe
+12/42 Test: EventBus: unsubscribe
+Command: "/home/r/game/build/tests/test_engine" "EventBus: unsubscribe"
+Directory: /home/r/game/build/tests
+"EventBus: unsubscribe" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "EventBus: unsubscribe"
+Randomness seeded to: 1482109776
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EventBus: unsubscribe" end time: Jul 08 13:17 IST
+"EventBus: unsubscribe" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/42 Testing: EventBus: subscriberCount
+13/42 Test: EventBus: subscriberCount
+Command: "/home/r/game/build/tests/test_engine" "EventBus: subscriberCount"
+Directory: /home/r/game/build/tests
+"EventBus: subscriberCount" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "EventBus: subscriberCount"
+Randomness seeded to: 545464785
+===============================================================================
+All tests passed (4 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EventBus: subscriberCount" end time: Jul 08 13:17 IST
+"EventBus: subscriberCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/42 Testing: EventBus: unsubscribing non-existent ID is a no-op
+14/42 Test: EventBus: unsubscribing non-existent ID is a no-op
+Command: "/home/r/game/build/tests/test_engine" "EventBus: unsubscribing non-existent ID is a no-op"
+Directory: /home/r/game/build/tests
+"EventBus: unsubscribing non-existent ID is a no-op" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "EventBus: unsubscribing non-existent ID is a no-op"
+Randomness seeded to: 2511417160
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"EventBus: unsubscribing non-existent ID is a no-op" end time: Jul 08 13:17 IST
+"EventBus: unsubscribing non-existent ID is a no-op" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/42 Testing: ChessRules: pawn moves forward
+15/42 Test: ChessRules: pawn moves forward
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: pawn moves forward"
+Directory: /home/r/game/build/tests
+"ChessRules: pawn moves forward" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: pawn moves forward"
+Randomness seeded to: 2401717887
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: pawn moves forward" end time: Jul 08 13:17 IST
+"ChessRules: pawn moves forward" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/42 Testing: ChessRules: pawn blocked by piece
+16/42 Test: ChessRules: pawn blocked by piece
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: pawn blocked by piece"
+Directory: /home/r/game/build/tests
+"ChessRules: pawn blocked by piece" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: pawn blocked by piece"
+Randomness seeded to: 2788219729
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: pawn blocked by piece" end time: Jul 08 13:17 IST
+"ChessRules: pawn blocked by piece" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/42 Testing: ChessRules: pawn captures diagonally
+17/42 Test: ChessRules: pawn captures diagonally
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: pawn captures diagonally"
+Directory: /home/r/game/build/tests
+"ChessRules: pawn captures diagonally" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: pawn captures diagonally"
+Randomness seeded to: 2393130525
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: pawn captures diagonally" end time: Jul 08 13:17 IST
+"ChessRules: pawn captures diagonally" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/42 Testing: ChessRules: knight moves L-shape
+18/42 Test: ChessRules: knight moves L-shape
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: knight moves L-shape"
+Directory: /home/r/game/build/tests
+"ChessRules: knight moves L-shape" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: knight moves L-shape"
+Randomness seeded to: 2080174265
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: knight moves L-shape" end time: Jul 08 13:17 IST
+"ChessRules: knight moves L-shape" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/42 Testing: ChessRules: knight blocked by friendly pieces reduces moves
+19/42 Test: ChessRules: knight blocked by friendly pieces reduces moves
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: knight blocked by friendly pieces reduces moves"
+Directory: /home/r/game/build/tests
+"ChessRules: knight blocked by friendly pieces reduces moves" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: knight blocked by friendly pieces reduces moves"
+Randomness seeded to: 2497293130
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: knight blocked by friendly pieces reduces moves" end time: Jul 08 13:17 IST
+"ChessRules: knight blocked by friendly pieces reduces moves" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/42 Testing: ChessRules: bishop moves diagonally
+20/42 Test: ChessRules: bishop moves diagonally
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: bishop moves diagonally"
+Directory: /home/r/game/build/tests
+"ChessRules: bishop moves diagonally" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: bishop moves diagonally"
+Randomness seeded to: 3427829425
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: bishop moves diagonally" end time: Jul 08 13:17 IST
+"ChessRules: bishop moves diagonally" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/42 Testing: ChessRules: rook moves orthogonally
+21/42 Test: ChessRules: rook moves orthogonally
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: rook moves orthogonally"
+Directory: /home/r/game/build/tests
+"ChessRules: rook moves orthogonally" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: rook moves orthogonally"
+Randomness seeded to: 2425613037
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: rook moves orthogonally" end time: Jul 08 13:17 IST
+"ChessRules: rook moves orthogonally" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/42 Testing: ChessRules: queen combines rook and bishop
+22/42 Test: ChessRules: queen combines rook and bishop
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: queen combines rook and bishop"
+Directory: /home/r/game/build/tests
+"ChessRules: queen combines rook and bishop" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: queen combines rook and bishop"
+Randomness seeded to: 2575274960
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: queen combines rook and bishop" end time: Jul 08 13:17 IST
+"ChessRules: queen combines rook and bishop" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/42 Testing: ChessRules: initial position legal moves count
+23/42 Test: ChessRules: initial position legal moves count
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: initial position legal moves count"
+Directory: /home/r/game/build/tests
+"ChessRules: initial position legal moves count" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: initial position legal moves count"
+Randomness seeded to: 338290882
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: initial position legal moves count" end time: Jul 08 13:17 IST
+"ChessRules: initial position legal moves count" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/42 Testing: ChessRules: validateMove returns correct result
+24/42 Test: ChessRules: validateMove returns correct result
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: validateMove returns correct result"
+Directory: /home/r/game/build/tests
+"ChessRules: validateMove returns correct result" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: validateMove returns correct result"
+Randomness seeded to: 3094834413
+===============================================================================
+All tests passed (3 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: validateMove returns correct result" end time: Jul 08 13:17 IST
+"ChessRules: validateMove returns correct result" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/42 Testing: ChessRules: pawn promotion generates 4 choices
+25/42 Test: ChessRules: pawn promotion generates 4 choices
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: pawn promotion generates 4 choices"
+Directory: /home/r/game/build/tests
+"ChessRules: pawn promotion generates 4 choices" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: pawn promotion generates 4 choices"
+Randomness seeded to: 2335013574
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: pawn promotion generates 4 choices" end time: Jul 08 13:17 IST
+"ChessRules: pawn promotion generates 4 choices" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/42 Testing: CheckDetector: king not in check on empty board
+26/42 Test: CheckDetector: king not in check on empty board
+Command: "/home/r/game/build/tests/test_angry_chess" "CheckDetector: king not in check on empty board"
+Directory: /home/r/game/build/tests
+"CheckDetector: king not in check on empty board" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "CheckDetector: king not in check on empty board"
+Randomness seeded to: 4001094187
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CheckDetector: king not in check on empty board" end time: Jul 08 13:17 IST
+"CheckDetector: king not in check on empty board" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/42 Testing: CheckDetector: rook gives check
+27/42 Test: CheckDetector: rook gives check
+Command: "/home/r/game/build/tests/test_angry_chess" "CheckDetector: rook gives check"
+Directory: /home/r/game/build/tests
+"CheckDetector: rook gives check" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "CheckDetector: rook gives check"
+Randomness seeded to: 1858520608
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CheckDetector: rook gives check" end time: Jul 08 13:17 IST
+"CheckDetector: rook gives check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/42 Testing: CheckDetector: bishop gives check
+28/42 Test: CheckDetector: bishop gives check
+Command: "/home/r/game/build/tests/test_angry_chess" "CheckDetector: bishop gives check"
+Directory: /home/r/game/build/tests
+"CheckDetector: bishop gives check" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "CheckDetector: bishop gives check"
+Randomness seeded to: 3255093262
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CheckDetector: bishop gives check" end time: Jul 08 13:17 IST
+"CheckDetector: bishop gives check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/42 Testing: CheckDetector: piece blocking check
+29/42 Test: CheckDetector: piece blocking check
+Command: "/home/r/game/build/tests/test_angry_chess" "CheckDetector: piece blocking check"
+Directory: /home/r/game/build/tests
+"CheckDetector: piece blocking check" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "CheckDetector: piece blocking check"
+Randomness seeded to: 732825228
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CheckDetector: piece blocking check" end time: Jul 08 13:17 IST
+"CheckDetector: piece blocking check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/42 Testing: CheckDetector: knight gives check
+30/42 Test: CheckDetector: knight gives check
+Command: "/home/r/game/build/tests/test_angry_chess" "CheckDetector: knight gives check"
+Directory: /home/r/game/build/tests
+"CheckDetector: knight gives check" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "CheckDetector: knight gives check"
+Randomness seeded to: 2742045329
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"CheckDetector: knight gives check" end time: Jul 08 13:17 IST
+"CheckDetector: knight gives check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/42 Testing: ChessRules: move that leaves king in check is illegal
+31/42 Test: ChessRules: move that leaves king in check is illegal
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: move that leaves king in check is illegal"
+Directory: /home/r/game/build/tests
+"ChessRules: move that leaves king in check is illegal" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: move that leaves king in check is illegal"
+Randomness seeded to: 1610177506
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: move that leaves king in check is illegal" end time: Jul 08 13:17 IST
+"ChessRules: move that leaves king in check is illegal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/42 Testing: ChessRules: checkmate detection — fool's mate
+32/42 Test: ChessRules: checkmate detection — fool's mate
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: checkmate detection — fool's mate"
+Directory: /home/r/game/build/tests
+"ChessRules: checkmate detection — fool's mate" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: checkmate detection — fool's mate"
+Randomness seeded to: 1137381335
+===============================================================================
+All tests passed (5 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: checkmate detection — fool's mate" end time: Jul 08 13:17 IST
+"ChessRules: checkmate detection — fool's mate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/42 Testing: ChessRules: stalemate detection
+33/42 Test: ChessRules: stalemate detection
+Command: "/home/r/game/build/tests/test_angry_chess" "ChessRules: stalemate detection"
+Directory: /home/r/game/build/tests
+"ChessRules: stalemate detection" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "ChessRules: stalemate detection"
+Randomness seeded to: 1786946481
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ChessRules: stalemate detection" end time: Jul 08 13:17 IST
+"ChessRules: stalemate detection" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/42 Testing: CheckDetector: pawn gives check
+34/42 Test: CheckDetector: pawn gives check
+Command: "/home/r/game/build/tests/test_angry_chess" "CheckDetector: pawn gives check"
+Directory: /home/r/game/build/tests
+"CheckDetector: pawn gives check" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "CheckDetector: pawn gives check"
+Randomness seeded to: 3738480337
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CheckDetector: pawn gives check" end time: Jul 08 13:17 IST
+"CheckDetector: pawn gives check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/42 Testing: Win conditions: fifty-move rule draw
+35/42 Test: Win conditions: fifty-move rule draw
+Command: "/home/r/game/build/tests/test_angry_chess" "Win conditions: fifty-move rule draw"
+Directory: /home/r/game/build/tests
+"Win conditions: fifty-move rule draw" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "Win conditions: fifty-move rule draw"
+Randomness seeded to: 1157839398
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Win conditions: fifty-move rule draw" end time: Jul 08 13:17 IST
+"Win conditions: fifty-move rule draw" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/42 Testing: Win conditions: game ongoing after few moves
+36/42 Test: Win conditions: game ongoing after few moves
+Command: "/home/r/game/build/tests/test_angry_chess" "Win conditions: game ongoing after few moves"
+Directory: /home/r/game/build/tests
+"Win conditions: game ongoing after few moves" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "Win conditions: game ongoing after few moves"
+Randomness seeded to: 898493742
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"Win conditions: game ongoing after few moves" end time: Jul 08 13:17 IST
+"Win conditions: game ongoing after few moves" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/42 Testing: Win conditions: check is reported
+37/42 Test: Win conditions: check is reported
+Command: "/home/r/game/build/tests/test_angry_chess" "Win conditions: check is reported"
+Directory: /home/r/game/build/tests
+"Win conditions: check is reported" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "Win conditions: check is reported"
+Randomness seeded to: 682689749
+===============================================================================
+All tests passed (1 assertion in 1 test case)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Win conditions: check is reported" end time: Jul 08 13:17 IST
+"Win conditions: check is reported" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/42 Testing: FenParser: parse starting position
+38/42 Test: FenParser: parse starting position
+Command: "/home/r/game/build/tests/test_angry_chess" "FenParser: parse starting position"
+Directory: /home/r/game/build/tests
+"FenParser: parse starting position" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "FenParser: parse starting position"
+Randomness seeded to: 3549229197
+===============================================================================
+All tests passed (20 assertions in 1 test case)
+
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"FenParser: parse starting position" end time: Jul 08 13:17 IST
+"FenParser: parse starting position" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/42 Testing: FenParser: parse custom position with en-passant
+39/42 Test: FenParser: parse custom position with en-passant
+Command: "/home/r/game/build/tests/test_angry_chess" "FenParser: parse custom position with en-passant"
+Directory: /home/r/game/build/tests
+"FenParser: parse custom position with en-passant" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "FenParser: parse custom position with en-passant"
+Randomness seeded to: 718074329
+===============================================================================
+All tests passed (6 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"FenParser: parse custom position with en-passant" end time: Jul 08 13:17 IST
+"FenParser: parse custom position with en-passant" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/42 Testing: FenParser: generate matches parse round-trip
+40/42 Test: FenParser: generate matches parse round-trip
+Command: "/home/r/game/build/tests/test_angry_chess" "FenParser: generate matches parse round-trip"
+Directory: /home/r/game/build/tests
+"FenParser: generate matches parse round-trip" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "FenParser: generate matches parse round-trip"
+Randomness seeded to: 434875428
+===============================================================================
+All tests passed (129 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"FenParser: generate matches parse round-trip" end time: Jul 08 13:17 IST
+"FenParser: generate matches parse round-trip" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/42 Testing: FenParser: legal moves from FEN position (Scholar's mate setup)
+41/42 Test: FenParser: legal moves from FEN position (Scholar's mate setup)
+Command: "/home/r/game/build/tests/test_angry_chess" "FenParser: legal moves from FEN position (Scholar's mate setup)"
+Directory: /home/r/game/build/tests
+"FenParser: legal moves from FEN position (Scholar's mate setup)" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "FenParser: legal moves from FEN position (Scholar's mate setup)"
+Randomness seeded to: 3636840444
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"FenParser: legal moves from FEN position (Scholar's mate setup)" end time: Jul 08 13:17 IST
+"FenParser: legal moves from FEN position (Scholar's mate setup)" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/42 Testing: FenParser: halfmove clock and full move number
+42/42 Test: FenParser: halfmove clock and full move number
+Command: "/home/r/game/build/tests/test_angry_chess" "FenParser: halfmove clock and full move number"
+Directory: /home/r/game/build/tests
+"FenParser: halfmove clock and full move number" start time: Jul 08 13:17 IST
+Output:
+----------------------------------------------------------
+Filters: "FenParser: halfmove clock and full move number"
+Randomness seeded to: 2546064241
+===============================================================================
+All tests passed (2 assertions in 1 test case)
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"FenParser: halfmove clock and full move number" end time: Jul 08 13:17 IST
+"FenParser: halfmove clock and full move number" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 08 13:17 IST

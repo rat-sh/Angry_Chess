@@ -1,0 +1,2 @@
+/usr/bin/ar qc libengine.a CMakeFiles/engine.dir/core/PluginRegistry.cpp.o CMakeFiles/engine.dir/core/GameEngine.cpp.o CMakeFiles/engine.dir/board/BoardState.cpp.o CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o CMakeFiles/engine.dir/ai/RandomAI.cpp.o CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o
+/usr/bin/ranlib libengine.a
