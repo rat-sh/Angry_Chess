@@ -20,6 +20,12 @@ public:
         const BoardState& state,
         const Move& move) const = 0;
 
+    /// (Optional) Translate a user-friendly UI move (e.g. King-to-Rook castling)
+    /// into a strict engine move. Returns the original move by default.
+    [[nodiscard]] virtual Move canonicalizeMove(
+        const BoardState& /*state*/,
+        const Move& move) const { return move; }
+
     // ── Move Generation ───────────────────────────────────────────────────────
 
     /// Generate all fully-legal moves for the piece at `from`.

@@ -266,10 +266,7 @@ engine/CMakeFiles/engine.dir/core/GameEngine.cpp.o: \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/lib/linux/uapi/x86/asm/unistd.h \
  /usr/lib/linux/uapi/x86/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/r/game/engine/statemachine/GameStateMachine.hpp \
- /home/r/game/engine/statemachine/IGameState.hpp \
- /home/r/game/engine/statemachine/States.hpp /usr/include/c++/14/memory \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/14/memory \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14/bits/shared_ptr_atomic.h \
  /usr/include/c++/14/backward/auto_ptr.h \
@@ -277,4 +274,11 @@ engine/CMakeFiles/engine.dir/core/GameEngine.cpp.o: \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h /usr/include/c++/14/iostream \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/ranges_algo.h \
- /usr/include/c++/14/pstl/glue_algorithm_defs.h
+ /usr/include/c++/14/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/14/thread /usr/include/c++/14/stop_token \
+ /usr/include/c++/14/bits/std_thread.h /usr/include/c++/14/semaphore \
+ /usr/include/c++/14/bits/semaphore_base.h \
+ /usr/include/c++/14/bits/atomic_timed_wait.h \
+ /usr/include/c++/14/bits/this_thread_sleep.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h

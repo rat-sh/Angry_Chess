@@ -1,6 +1,6 @@
 #include "engine/input/SDL2InputHandler.hpp"
 #include "engine/rules/Move.hpp"
-#include "games/angry_chess/ChessPieceTypes.hpp"
+#include "chess/ChessPieceTypes.hpp"
 
 namespace bge {
 

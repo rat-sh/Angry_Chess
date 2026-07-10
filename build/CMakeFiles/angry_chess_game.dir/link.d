@@ -6,7 +6,7 @@ angry_chess_game: \
   /usr/lib/gcc/x86_64-linux-gnu/14/libasan.so \
   CMakeFiles/angry_chess_game.dir/app/main.cpp.o \
   engine/libengine.a \
-  games/angry_chess/libangry_chess.a \
+  chess/libangry_chess.a \
   engine/libengine.a \
   /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
   /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
@@ -51,7 +51,7 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 
 engine/libengine.a:
 
-games/angry_chess/libangry_chess.a:
+chess/libangry_chess.a:
 
 engine/libengine.a:
 

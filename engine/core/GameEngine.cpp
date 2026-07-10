@@ -4,6 +4,7 @@
 #include <sstream>
 #include <algorithm>
 #include <cstdio>
+#include <thread>
 
 namespace bge {
 
@@ -113,7 +114,8 @@ void GameEngine::processEvent(const InputEvent& ev) {
 // ─── Move Handling ────────────────────────────────────────────────────────────
 
 void GameEngine::applyPlayerMove(const Move& raw) {
-    MoveResult result = rules_->validateMove(state_, raw);
+    Move input = rules_->canonicalizeMove(state_, raw);
+    MoveResult result = rules_->validateMove(state_, input);
 
     if (!isLegal(result)) {
         messageLine_ = std::string("Invalid move: ") + toString(result);
@@ -124,14 +126,22 @@ void GameEngine::applyPlayerMove(const Move& raw) {
     history_.push_back(state_);
 
     // Apply through rules (allows game-specific side-effects)
-    Move applied = raw;
+    Move applied = input;
     // Find the fully annotated move from legal moves
-    auto legalMoves = rules_->generateLegalMoves(state_, raw.from);
+    auto legalMoves = rules_->generateLegalMoves(state_, input.from);
     for (const auto& lm : legalMoves) {
-        if (lm.from == raw.from && lm.to == raw.to) {
-            // Use promotion type from user input if present
+        if (lm.from == input.from && lm.to == input.to) {
             applied = lm;
-            if (raw.promotionType != kNoPiece) applied.promotionType = raw.promotionType;
+            // Use promotion type from user input if present
+            if (input.promotionType != kNoPiece) {
+                applied.promotionType = input.promotionType;
+            } else if (hasFlag(lm.flags, MoveFlag::Promotion)) {
+                // UI didn't provide a piece, prompt them now
+                PieceTypeID promo = renderer_->showPromotionPicker(state_.activePlayer);
+                if (promo != kNoPiece) {
+                    applied.promotionType = promo;
+                }
+            }
             break;
         }
     }
@@ -149,13 +159,43 @@ void GameEngine::runAITurn() {
 
     Move m = ai->selectMove(state_, *rules_, state_.activePlayer, config_.aiTimeLimit);
     if (!m.isValid()) {
-        messageLine_ = "AI has no legal moves.";
+        auto legal = rules_->generateAllLegalMoves(state_, state_.activePlayer);
+        if (legal.empty()) {
+            gameStatus_ = rules_->checkGameStatus(state_, state_.activePlayer);
+            if (gameStatus_ == GameStatus::Checkmate) {
+                Color winner = opposite(state_.activePlayer);
+                messageLine_ = std::string(colorName(winner)) + " wins by checkmate!";
+                gameOverBus_.publish(GameOverEvent{
+                    static_cast<int8_t>(winner),
+                    static_cast<uint8_t>(GameStatus::Checkmate)
+                });
+            } else if (gameStatus_ == GameStatus::Stalemate) {
+                messageLine_ = "Stalemate! It's a draw.";
+                gameOverBus_.publish(GameOverEvent{0, static_cast<uint8_t>(GameStatus::Stalemate)});
+            } else {
+                messageLine_ = "AI has no legal moves.";
+            }
+            updateStatus();
+        } else {
+            messageLine_ = "AI failed to select a move.";
+        }
         return;
     }
 
     history_.push_back(state_);
     state_ = rules_->applyMove(state_, m);
     afterMove(m);
+
+    // Pacing delay — makes AI vs AI watchable; zero-cost for single-AI games.
+    if (config_.aiMoveDelay.count() > 0) {
+        std::this_thread::sleep_for(config_.aiMoveDelay);
+    }
+
+    // Non-blocking check: allow user to quit even during AI turns.
+    auto ev = input_->poll();
+    if (ev.has_value()) {
+        processEvent(*ev);
+    }
 }
 
 void GameEngine::afterMove(const Move& applied) {

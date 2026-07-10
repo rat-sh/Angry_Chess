@@ -292,8 +292,7 @@ CMakeFiles/angry_chess_sdl.dir/engine/renderer/SDL2Renderer.cpp.o: \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h /usr/include/SDL2/SDL_ttf.h \
- /usr/include/SDL2/SDL.h \
- /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
+ /usr/include/SDL2/SDL.h /home/r/game/chess/ChessPieceTypes.hpp \
  /usr/include/c++/14/stdexcept /usr/include/c++/14/cstring \
  /usr/include/c++/14/algorithm /usr/include/c++/14/bits/stl_algo.h \
  /usr/include/c++/14/bits/algorithmfwd.h \

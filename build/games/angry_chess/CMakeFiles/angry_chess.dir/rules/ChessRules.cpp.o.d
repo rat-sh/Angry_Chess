@@ -163,12 +163,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o: \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
  /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
- /home/r/game/games/angry_chess/pieces/Pawn.hpp \
- /home/r/game/games/angry_chess/pieces/Knight.hpp \
- /home/r/game/games/angry_chess/pieces/Bishop.hpp \
- /home/r/game/games/angry_chess/pieces/Rook.hpp \
- /home/r/game/games/angry_chess/pieces/Queen.hpp \
- /home/r/game/games/angry_chess/pieces/King.hpp \
+ /home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp \
+ /home/r/game/games/angry_chess/pieces/Knight/Knight.hpp \
+ /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
+ /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
+ /home/r/game/games/angry_chess/pieces/Queen/Queen.hpp \
+ /home/r/game/games/angry_chess/pieces/King/King.hpp \
  /home/r/game/games/angry_chess/rules/CheckDetector.hpp \
- /home/r/game/games/angry_chess/rules/CastlingRule.hpp \
- /home/r/game/games/angry_chess/rules/ChessWinCondition.hpp
+ /home/r/game/games/angry_chess/rules/movement/CastlingRule.hpp \
+ /home/r/game/games/angry_chess/rules/win/ChessWinCondition.hpp

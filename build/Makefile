@@ -201,7 +201,7 @@ angry_chess: cmake_check_build_system
 
 # fast build rule for target.
 angry_chess/fast:
-	$(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/build
+	$(MAKE) $(MAKESILENT) -f chess/CMakeFiles/angry_chess.dir/build.make chess/CMakeFiles/angry_chess.dir/build
 .PHONY : angry_chess/fast
 
 #=============================================================================

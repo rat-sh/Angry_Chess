@@ -25,7 +25,7 @@ FetchContent_MakeAvailable(Catch2)
 
 # ── Subdirectories ─────────────────────────────────────────────────────────────
 add_subdirectory(engine)
-add_subdirectory(games/angry_chess)
+add_subdirectory(chess)
 
 # ── Application executable ─────────────────────────────────────────────────────
 add_executable(angry_chess_game app/main.cpp)

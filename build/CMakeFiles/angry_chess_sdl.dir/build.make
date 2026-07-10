@@ -129,7 +129,7 @@ angry_chess_sdl: CMakeFiles/angry_chess_sdl.dir/engine/input/SDL2InputHandler.cp
 angry_chess_sdl: CMakeFiles/angry_chess_sdl.dir/build.make
 angry_chess_sdl: CMakeFiles/angry_chess_sdl.dir/compiler_depend.ts
 angry_chess_sdl: engine/libengine.a
-angry_chess_sdl: games/angry_chess/libangry_chess.a
+angry_chess_sdl: chess/libangry_chess.a
 angry_chess_sdl: /usr/lib/x86_64-linux-gnu/libSDL2.so
 angry_chess_sdl: /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so
 angry_chess_sdl: engine/libengine.a

@@ -46,6 +46,9 @@ public:
 
     /// Called on window/terminal resize.
     virtual void onResize() {}
+
+    /// Request promotion type from the user (GUI). Returns kNoPiece by default.
+    virtual PieceTypeID showPromotionPicker(Color /*color*/) { return kNoPiece; }
 };
 
 } // namespace bge

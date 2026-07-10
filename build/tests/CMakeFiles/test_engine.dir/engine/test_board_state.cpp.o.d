@@ -273,4 +273,4 @@ tests/CMakeFiles/test_engine.dir/engine/test_board_state.cpp.o: \
  /usr/include/c++/14/tr1/riemann_zeta.tcc \
  /home/r/game/engine/rules/Move.hpp /usr/include/c++/14/utility \
  /usr/include/c++/14/bits/stl_relops.h \
- /home/r/game/games/angry_chess/ChessPieceTypes.hpp
+ /home/r/game/chess/ChessPieceTypes.hpp

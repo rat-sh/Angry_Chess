@@ -7,7 +7,7 @@ A **production-grade, plugin-extensible Board Game Engine** written in modern **
 ```
 ┌─────────────────────────────────────────────────────┐
 │                   Game Plugin Layer                  │
-│   games/angry_chess/  (Pieces · Rules · AI · Theme) │
+│   chess/  (Pieces · Rules · AI · Theme) │
 └───────────────────┬─────────────────────────────────┘
                     │  implements interfaces only
 ┌───────────────────▼─────────────────────────────────┐
@@ -31,15 +31,13 @@ game/
 │   ├── rules/            ← IGameRules, Move, MoveResult interfaces
 │   ├── renderer/         ← IRenderer, ConsoleRenderer, NullRenderer
 │   ├── input/            ← IInputHandler, ConsoleInputHandler
-│   ├── ai/               ← IAIPlayer, RandomAI, MinimaxAI (alpha-beta)
-│   ├── theme/            ← ITheme, ThemeRegistry, DefaultTheme
-│   └── statemachine/     ← IGameState, GameStateMachine
-├── games/
-│   └── angry_chess/      ← Chess plugin (implements engine interfaces)
-│       ├── pieces/       ← Pawn, Knight, Bishop, Rook, Queen, King
-│       ├── rules/        ← ChessRules, CheckDetector, CastlingRule, ...
-│       ├── ai/           ← ChessEvaluator (material + PSTs)
-│       └── theme/        ← ClassicTheme, AngryTheme
+│   ├── ai/               ← IAIPlayer, RandomAI
+│   └── theme/            ← ITheme
+├── chess/                ← Chess plugin (implements engine interfaces)
+│   ├── pieces/           ← King, Queen, Rook, Bishop, Knight, Pawn
+│   ├── rules/            ← ChessRules, CheckDetector, CastlingRule, ...
+│   ├── ai/               ← StockfishAI (optional UCI bridge)
+│   └── theme/            ← ClassicTheme, AngryTheme
 ├── app/
 │   └── main.cpp          ← Entry point; wires plugin + engine
 └── tests/                ← Catch2 unit tests
@@ -105,7 +103,7 @@ ctest --output-on-failure
 ## Adding a New Game (e.g., Checkers)
 
 ```cpp
-// 1. Create games/checkers/ with your rules + pieces + theme
+// 1. Create chess/checkers/ (or a new plugin folder) with your rules + pieces + theme
 class CheckersRules : public bge::IGameRules { /* ... */ };
 class CheckersTheme : public bge::ITheme     { /* ... */ };
 

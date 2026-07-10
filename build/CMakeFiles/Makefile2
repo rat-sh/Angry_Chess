@@ -67,7 +67,7 @@ all: CMakeFiles/angry_chess_game.dir/all
 all: CMakeFiles/angry_chess_sdl.dir/all
 all: _deps/catch2-build/all
 all: engine/all
-all: games/angry_chess/all
+all: chess/all
 all: tests/all
 .PHONY : all
 
@@ -76,14 +76,14 @@ codegen: CMakeFiles/angry_chess_game.dir/codegen
 codegen: CMakeFiles/angry_chess_sdl.dir/codegen
 codegen: _deps/catch2-build/codegen
 codegen: engine/codegen
-codegen: games/angry_chess/codegen
+codegen: chess/codegen
 codegen: tests/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
 preinstall: _deps/catch2-build/preinstall
 preinstall: engine/preinstall
-preinstall: games/angry_chess/preinstall
+preinstall: chess/preinstall
 preinstall: tests/preinstall
 .PHONY : preinstall
 
@@ -92,7 +92,7 @@ clean: CMakeFiles/angry_chess_game.dir/clean
 clean: CMakeFiles/angry_chess_sdl.dir/clean
 clean: _deps/catch2-build/clean
 clean: engine/clean
-clean: games/angry_chess/clean
+clean: chess/clean
 clean: tests/clean
 .PHONY : clean
 
@@ -138,6 +138,25 @@ _deps/catch2-build/src/clean: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.d
 .PHONY : _deps/catch2-build/src/clean
 
 #=============================================================================
+# Directory level rules for directory chess
+
+# Recursive "all" directory target.
+chess/all: chess/CMakeFiles/angry_chess.dir/all
+.PHONY : chess/all
+
+# Recursive "codegen" directory target.
+chess/codegen: chess/CMakeFiles/angry_chess.dir/codegen
+.PHONY : chess/codegen
+
+# Recursive "preinstall" directory target.
+chess/preinstall:
+.PHONY : chess/preinstall
+
+# Recursive "clean" directory target.
+chess/clean: chess/CMakeFiles/angry_chess.dir/clean
+.PHONY : chess/clean
+
+#=============================================================================
 # Directory level rules for directory engine
 
 # Recursive "all" directory target.
@@ -155,25 +174,6 @@ engine/preinstall:
 # Recursive "clean" directory target.
 engine/clean: engine/CMakeFiles/engine.dir/clean
 .PHONY : engine/clean
-
-#=============================================================================
-# Directory level rules for directory games/angry_chess
-
-# Recursive "all" directory target.
-games/angry_chess/all: games/angry_chess/CMakeFiles/angry_chess.dir/all
-.PHONY : games/angry_chess/all
-
-# Recursive "codegen" directory target.
-games/angry_chess/codegen: games/angry_chess/CMakeFiles/angry_chess.dir/codegen
-.PHONY : games/angry_chess/codegen
-
-# Recursive "preinstall" directory target.
-games/angry_chess/preinstall:
-.PHONY : games/angry_chess/preinstall
-
-# Recursive "clean" directory target.
-games/angry_chess/clean: games/angry_chess/CMakeFiles/angry_chess.dir/clean
-.PHONY : games/angry_chess/clean
 
 #=============================================================================
 # Directory level rules for directory tests
@@ -230,15 +230,15 @@ tests/clean: tests/CMakeFiles/test_angry_chess.dir/clean
 
 # All Build rule for target.
 CMakeFiles/angry_chess_game.dir/all: engine/CMakeFiles/engine.dir/all
-CMakeFiles/angry_chess_game.dir/all: games/angry_chess/CMakeFiles/angry_chess.dir/all
+CMakeFiles/angry_chess_game.dir/all: chess/CMakeFiles/angry_chess.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/angry_chess_game.dir/build.make CMakeFiles/angry_chess_game.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/angry_chess_game.dir/build.make CMakeFiles/angry_chess_game.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=85 "Built target angry_chess_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=86 "Built target angry_chess_game"
 .PHONY : CMakeFiles/angry_chess_game.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/angry_chess_game.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/angry_chess_game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 0
 .PHONY : CMakeFiles/angry_chess_game.dir/rule
@@ -250,7 +250,7 @@ angry_chess_game: CMakeFiles/angry_chess_game.dir/rule
 # codegen rule for target.
 CMakeFiles/angry_chess_game.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/angry_chess_game.dir/build.make CMakeFiles/angry_chess_game.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=85 "Finished codegen for target angry_chess_game"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=86 "Finished codegen for target angry_chess_game"
 .PHONY : CMakeFiles/angry_chess_game.dir/codegen
 
 # clean rule for target.
@@ -263,15 +263,15 @@ CMakeFiles/angry_chess_game.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/angry_chess_sdl.dir/all: engine/CMakeFiles/engine.dir/all
-CMakeFiles/angry_chess_sdl.dir/all: games/angry_chess/CMakeFiles/angry_chess.dir/all
+CMakeFiles/angry_chess_sdl.dir/all: chess/CMakeFiles/angry_chess.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/angry_chess_sdl.dir/build.make CMakeFiles/angry_chess_sdl.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/angry_chess_sdl.dir/build.make CMakeFiles/angry_chess_sdl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=86,87,88 "Built target angry_chess_sdl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=87,88,89 "Built target angry_chess_sdl"
 .PHONY : CMakeFiles/angry_chess_sdl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/angry_chess_sdl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 19
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 18
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/angry_chess_sdl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 0
 .PHONY : CMakeFiles/angry_chess_sdl.dir/rule
@@ -283,7 +283,7 @@ angry_chess_sdl: CMakeFiles/angry_chess_sdl.dir/rule
 # codegen rule for target.
 CMakeFiles/angry_chess_sdl.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/angry_chess_sdl.dir/build.make CMakeFiles/angry_chess_sdl.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=86,87,88 "Finished codegen for target angry_chess_sdl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=87,88,89 "Finished codegen for target angry_chess_sdl"
 .PHONY : CMakeFiles/angry_chess_sdl.dir/codegen
 
 # clean rule for target.
@@ -298,12 +298,12 @@ CMakeFiles/angry_chess_sdl.dir/clean:
 _deps/catch2-build/src/CMakeFiles/Catch2.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Built target Catch2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74 "Built target Catch2"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/src/CMakeFiles/Catch2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 73
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 74
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2.dir/rule
@@ -315,7 +315,7 @@ Catch2: _deps/catch2-build/src/CMakeFiles/Catch2.dir/rule
 # codegen rule for target.
 _deps/catch2-build/src/CMakeFiles/Catch2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73 "Finished codegen for target Catch2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74 "Finished codegen for target Catch2"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2.dir/codegen
 
 # clean rule for target.
@@ -330,12 +330,12 @@ _deps/catch2-build/src/CMakeFiles/Catch2.dir/clean:
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=74 "Built target Catch2WithMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=75 "Built target Catch2WithMain"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 74
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 75
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 0
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule
@@ -347,7 +347,7 @@ Catch2WithMain: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/rule
 # codegen rule for target.
 _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/build.make _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=74 "Finished codegen for target Catch2WithMain"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=75 "Finished codegen for target Catch2WithMain"
 .PHONY : _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/codegen
 
 # clean rule for target.
@@ -362,12 +362,12 @@ _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/clean:
 engine/CMakeFiles/engine.dir/all:
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/depend
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=89,90,91,92,93,94 "Built target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=90,91,92,93,94 "Built target engine"
 .PHONY : engine/CMakeFiles/engine.dir/all
 
 # Build rule for subdir invocation for target.
 engine/CMakeFiles/engine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine/CMakeFiles/engine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 0
 .PHONY : engine/CMakeFiles/engine.dir/rule
@@ -379,7 +379,7 @@ engine: engine/CMakeFiles/engine.dir/rule
 # codegen rule for target.
 engine/CMakeFiles/engine.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=89,90,91,92,93,94 "Finished codegen for target engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=90,91,92,93,94 "Finished codegen for target engine"
 .PHONY : engine/CMakeFiles/engine.dir/codegen
 
 # clean rule for target.
@@ -388,36 +388,36 @@ engine/CMakeFiles/engine.dir/clean:
 .PHONY : engine/CMakeFiles/engine.dir/clean
 
 #=============================================================================
-# Target rules for target games/angry_chess/CMakeFiles/angry_chess.dir
+# Target rules for target chess/CMakeFiles/angry_chess.dir
 
 # All Build rule for target.
-games/angry_chess/CMakeFiles/angry_chess.dir/all: engine/CMakeFiles/engine.dir/all
-	$(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/depend
-	$(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=75,76,77,78,79,80,81,82,83,84 "Built target angry_chess"
-.PHONY : games/angry_chess/CMakeFiles/angry_chess.dir/all
+chess/CMakeFiles/angry_chess.dir/all: engine/CMakeFiles/engine.dir/all
+	$(MAKE) $(MAKESILENT) -f chess/CMakeFiles/angry_chess.dir/build.make chess/CMakeFiles/angry_chess.dir/depend
+	$(MAKE) $(MAKESILENT) -f chess/CMakeFiles/angry_chess.dir/build.make chess/CMakeFiles/angry_chess.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85 "Built target angry_chess"
+.PHONY : chess/CMakeFiles/angry_chess.dir/all
 
 # Build rule for subdir invocation for target.
-games/angry_chess/CMakeFiles/angry_chess.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 16
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 games/angry_chess/CMakeFiles/angry_chess.dir/all
+chess/CMakeFiles/angry_chess.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 15
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chess/CMakeFiles/angry_chess.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/r/game/build/CMakeFiles 0
-.PHONY : games/angry_chess/CMakeFiles/angry_chess.dir/rule
+.PHONY : chess/CMakeFiles/angry_chess.dir/rule
 
 # Convenience name for target.
-angry_chess: games/angry_chess/CMakeFiles/angry_chess.dir/rule
+angry_chess: chess/CMakeFiles/angry_chess.dir/rule
 .PHONY : angry_chess
 
 # codegen rule for target.
-games/angry_chess/CMakeFiles/angry_chess.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=75,76,77,78,79,80,81,82,83,84 "Finished codegen for target angry_chess"
-.PHONY : games/angry_chess/CMakeFiles/angry_chess.dir/codegen
+chess/CMakeFiles/angry_chess.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f chess/CMakeFiles/angry_chess.dir/build.make chess/CMakeFiles/angry_chess.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=76,77,78,79,80,81,82,83,84,85 "Finished codegen for target angry_chess"
+.PHONY : chess/CMakeFiles/angry_chess.dir/codegen
 
 # clean rule for target.
-games/angry_chess/CMakeFiles/angry_chess.dir/clean:
-	$(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/clean
-.PHONY : games/angry_chess/CMakeFiles/angry_chess.dir/clean
+chess/CMakeFiles/angry_chess.dir/clean:
+	$(MAKE) $(MAKESILENT) -f chess/CMakeFiles/angry_chess.dir/build.make chess/CMakeFiles/angry_chess.dir/clean
+.PHONY : chess/CMakeFiles/angry_chess.dir/clean
 
 #=============================================================================
 # Target rules for target tests/CMakeFiles/Experimental.dir
@@ -1356,7 +1356,7 @@ tests/CMakeFiles/test_engine.dir/clean:
 tests/CMakeFiles/test_angry_chess.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2.dir/all
 tests/CMakeFiles/test_angry_chess.dir/all: _deps/catch2-build/src/CMakeFiles/Catch2WithMain.dir/all
 tests/CMakeFiles/test_angry_chess.dir/all: engine/CMakeFiles/engine.dir/all
-tests/CMakeFiles/test_angry_chess.dir/all: games/angry_chess/CMakeFiles/angry_chess.dir/all
+tests/CMakeFiles/test_angry_chess.dir/all: chess/CMakeFiles/angry_chess.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_angry_chess.dir/build.make tests/CMakeFiles/test_angry_chess.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/test_angry_chess.dir/build.make tests/CMakeFiles/test_angry_chess.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/r/game/build/CMakeFiles --progress-num=95,96,97 "Built target test_angry_chess"

@@ -1,8 +1,8 @@
 #include "engine/core/GameEngine.hpp"
 #include "engine/core/PluginRegistry.hpp"
 #include "engine/core/PgnLogger.hpp"
-#include "games/angry_chess/AngryChessPlugin.hpp"
-#include "games/angry_chess/FenParser.hpp"
+#include "chess/AngryChessPlugin.hpp"
+#include "chess/FenParser.hpp"
 #include <iostream>
 #include <string>
 #include <stdexcept>
@@ -34,11 +34,10 @@ static bge::GameConfig askConfig() {
 
     std::cout << "\033[1mSelect mode:\033[0m\n"
               << "  1) Human vs Human\n"
-              << "  2) Human vs AI   (you play White)\n"
-              << "  3) AI vs Human   (you play Black)\n"
-              << "  4) AI vs AI      (watch)\n"
-              << "  5) Angry theme   (Human vs AI)\n"
-              << "\nChoice [1-5, default 2]: ";
+              << "  2) Human vs Stockfish  (you play White)\n"
+              << "  3) Stockfish vs Human  (you play Black)\n"
+              << "  4) AI vs AI  (watch)\n"
+              << "\nChoice [1-4, default 2]: ";
 
     int choice = 2;
     std::string line;
@@ -51,29 +50,23 @@ static bge::GameConfig askConfig() {
             cfg.whiteIsAI = false;
             cfg.blackIsAI = false;
             break;
-        case 2:
         default:
-            cfg.whiteIsAI  = false;
-            cfg.blackIsAI  = true;
-            cfg.blackAIName = "minimax";
+        case 2:
+            cfg.whiteIsAI   = false;
+            cfg.blackIsAI   = true;
+            cfg.blackAIName = "stockfish";
             break;
         case 3:
-            cfg.whiteIsAI  = true;
-            cfg.blackIsAI  = false;
-            cfg.whiteAIName = "minimax";
+            cfg.whiteIsAI   = true;
+            cfg.blackIsAI   = false;
+            cfg.whiteAIName = "stockfish";
             break;
         case 4:
-            cfg.whiteIsAI  = true;
-            cfg.blackIsAI  = true;
-            cfg.whiteAIName = "minimax_fast";
-            cfg.blackAIName = "minimax_fast";
-            cfg.aiTimeLimit = std::chrono::milliseconds{200};
-            break;
-        case 5:
-            cfg.whiteIsAI  = false;
-            cfg.blackIsAI  = true;
-            cfg.blackAIName = "minimax";
-            cfg.themeName   = "angry";
+            cfg.whiteIsAI   = true;
+            cfg.blackIsAI   = true;
+            cfg.whiteAIName = "random";
+            cfg.blackAIName = "random";
+            cfg.aiMoveDelay = std::chrono::milliseconds{600};
             break;
     }
     return cfg;

@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o"
-  "CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o.d"
   "CMakeFiles/engine.dir/ai/RandomAI.cpp.o"
   "CMakeFiles/engine.dir/ai/RandomAI.cpp.o.d"
   "CMakeFiles/engine.dir/board/BoardState.cpp.o"
@@ -13,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o.d"
   "CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o"
   "CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o.d"
-  "CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o"
-  "CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o.d"
   "libengine.a"
   "libengine.pdb"
 )

@@ -4,17 +4,14 @@ set(ENGINE_SOURCES
     # Core
     core/PluginRegistry.cpp
     core/GameEngine.cpp
+    # AI
+    ai/RandomAI.cpp
     # Board
     board/BoardState.cpp
     # Input
     input/ConsoleInputHandler.cpp
     # Renderer
     renderer/ConsoleRenderer.cpp
-    # AI
-    ai/RandomAI.cpp
-    ai/MinimaxAI.cpp
-    # State Machine
-    statemachine/GameStateMachine.cpp
 )
 
 add_library(engine STATIC ${ENGINE_SOURCES})

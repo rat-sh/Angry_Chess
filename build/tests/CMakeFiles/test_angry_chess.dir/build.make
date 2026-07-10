@@ -145,7 +145,7 @@ tests/test_angry_chess: tests/CMakeFiles/test_angry_chess.dir/angry_chess/test_f
 tests/test_angry_chess: tests/CMakeFiles/test_angry_chess.dir/build.make
 tests/test_angry_chess: tests/CMakeFiles/test_angry_chess.dir/compiler_depend.ts
 tests/test_angry_chess: engine/libengine.a
-tests/test_angry_chess: games/angry_chess/libangry_chess.a
+tests/test_angry_chess: chess/libangry_chess.a
 tests/test_angry_chess: _deps/catch2-build/src/libCatch2Maind.a
 tests/test_angry_chess: engine/libengine.a
 tests/test_angry_chess: _deps/catch2-build/src/libCatch2d.a

@@ -69,7 +69,21 @@ struct Position {
     }
 };
 
-// ─── Castling Rights ─────────────────────────────────────────────────────────
+// ─── Secondary Move Rights ────────────────────────────────────────────────────
+/// Generic bitmask for tracking game-specific special move availability.
+/// Each game plugin defines what the bits mean (e.g., castling rights in chess).
+/// Use 0 for "no special rights available".
+struct SecondaryMoveRights {
+    uint8_t flags{0xFF}; ///< All bits set = all rights available (game plugin interprets)
+
+    void revoke(uint8_t mask) noexcept { flags &= ~mask; }
+    [[nodiscard]] bool has(uint8_t mask) const noexcept { return (flags & mask) != 0; }
+    void grant(uint8_t mask) noexcept { flags |= mask; }
+};
+
+// ─── Legacy Castling Rights Shim ─────────────────────────────────────────────
+// Provided for game plugin compatibility only.
+// New code should use SecondaryMoveRights.
 struct CastlingRights {
     bool whiteKingside  : 1 {true};
     bool whiteQueenside : 1 {true};
@@ -95,13 +109,17 @@ struct CastlingRights {
 };
 
 // ─── Game Status ─────────────────────────────────────────────────────────────
+/// Generic game status codes returned by IGameRules::checkGameStatus().
+/// Game plugins return these to the engine; the engine has zero knowledge of
+/// what they mean in game terms — only Ongoing vs. non-Ongoing is significant
+/// for loop control. Individual values carry semantic meaning for rendering.
 enum class GameStatus : uint8_t {
-    Ongoing,
-    Check,
-    Checkmate,
-    Stalemate,
-    Draw,
-    Resigned,
+    Ongoing,      ///< Game is in progress; current player can move.
+    Check,        ///< Game-specific: current player is under threat (e.g. chess check).
+    Checkmate,    ///< Game-specific: current player lost (no escape).
+    Stalemate,    ///< No legal moves but not under direct threat; typically a draw.
+    Draw,         ///< Draw by rule (fifty-move, repetition, etc.).
+    Resigned,     ///< Active player resigned.
 };
 
 // ─── Highlight type (used by renderer) ───────────────────────────────────────

@@ -10,8 +10,8 @@
 #include "engine/core/PluginRegistry.hpp"
 #include "engine/renderer/SDL2Renderer.hpp"
 #include "engine/input/SDL2InputHandler.hpp"
-#include "games/angry_chess/AngryChessPlugin.hpp"
-#include "games/angry_chess/FenParser.hpp"
+#include "chess/AngryChessPlugin.hpp"
+#include "chess/FenParser.hpp"
 #include <iostream>
 #include <string>
 #include <stdexcept>
@@ -50,9 +50,9 @@ static int showMenu(SDL_Window* win, SDL_Renderer* rend, bge::SDL2Renderer& gfx)
 
     const char* opts[4] = {
         "1.  Human  vs  Human",
-        "2.  Human (White)  vs  AI  (Black)",
-        "3.  AI  (White)  vs  Human  (Black)",
-        "4.  AI  vs  AI  (spectate)",
+        "2.  Human (White)  vs  Stockfish  (Black)",
+        "3.  Stockfish  (White)  vs  Human  (Black)",
+        "4.  Stockfish  vs  Stockfish  (spectate)",
     };
 
     int W, H;
@@ -155,9 +155,13 @@ int main(int argc, char** argv) {
             cfg.themeName   = "classic";
             cfg.whiteIsAI   = whiteIsAI;
             cfg.blackIsAI   = blackIsAI;
-            cfg.whiteAIName = "minimax";
-            cfg.blackAIName = "minimax";
-            cfg.aiTimeLimit = std::chrono::milliseconds{500};
+            cfg.whiteAIName = (mode == 4) ? "random" : "stockfish";
+            cfg.blackAIName = (mode == 4) ? "random" : "stockfish";
+            cfg.aiTimeLimit = std::chrono::milliseconds{1000};
+            // 600ms pacing delay for AI vs AI spectator mode
+            cfg.aiMoveDelay = (mode == 4)
+                              ? std::chrono::milliseconds{600}
+                              : std::chrono::milliseconds{0};
 
             auto sdlInput = std::make_unique<bge::SDL2InputHandler>(gfx);
             auto rendWrap = std::make_unique<bge::RefRenderer>(gfx);
@@ -179,9 +183,9 @@ int main(int argc, char** argv) {
                 }
             }
 
-            // AI players
-            if (whiteIsAI) engine.setWhiteAI(registry.createAI("minimax"));
-            if (blackIsAI) engine.setBlackAI(registry.createAI("minimax"));
+            // AI players — Stockfish with minimax fallback
+            if (whiteIsAI) engine.setWhiteAI(registry.createAI(cfg.whiteAIName));
+            if (blackIsAI) engine.setBlackAI(registry.createAI(cfg.blackAIName));
 
             // Theme change hook — T key handled in SDL2InputHandler returns
             // CommandEvent("theme") which GameEngine forwards to processEvent.

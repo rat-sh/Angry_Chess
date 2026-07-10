@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
 #include "engine/board/BoardState.hpp"
 #include "engine/rules/Move.hpp"
-#include "games/angry_chess/ChessPieceTypes.hpp"
+#include "chess/ChessPieceTypes.hpp"
 
 using namespace bge;
 using namespace angry_chess;

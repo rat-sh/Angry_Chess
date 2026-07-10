@@ -44,10 +44,10 @@ tests/CMakeFiles/test_engine.dir/engine/test_board_state.cpp.o
  /home/r/game/build/_deps/catch2-src/src/catch2/internal/catch_unique_name.hpp
  /home/r/game/build/_deps/catch2-src/src/catch2/internal/catch_unique_ptr.hpp
  /home/r/game/build/_deps/catch2-src/src/catch2/internal/catch_void_type.hpp
+ /home/r/game/chess/ChessPieceTypes.hpp
  /home/r/game/engine/board/BoardState.hpp
  /home/r/game/engine/core/Types.hpp
  /home/r/game/engine/rules/Move.hpp
- /home/r/game/games/angry_chess/ChessPieceTypes.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h

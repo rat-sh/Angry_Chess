@@ -158,13 +158,13 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o: \
  /usr/include/c++/14/utility /usr/include/c++/14/bits/stl_relops.h \
  /usr/include/c++/14/array \
  /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
- /home/r/game/games/angry_chess/pieces/Pawn.hpp \
+ /home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp \
  /usr/include/c++/14/vector /usr/include/c++/14/bits/stl_uninitialized.h \
  /usr/include/c++/14/bits/stl_vector.h \
  /usr/include/c++/14/bits/stl_bvector.h \
  /usr/include/c++/14/bits/vector.tcc \
- /home/r/game/games/angry_chess/pieces/Knight.hpp \
- /home/r/game/games/angry_chess/pieces/Bishop.hpp \
- /home/r/game/games/angry_chess/pieces/Rook.hpp \
- /home/r/game/games/angry_chess/pieces/Queen.hpp \
- /home/r/game/games/angry_chess/pieces/King.hpp
+ /home/r/game/games/angry_chess/pieces/Knight/Knight.hpp \
+ /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
+ /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
+ /home/r/game/games/angry_chess/pieces/Queen/Queen.hpp \
+ /home/r/game/games/angry_chess/pieces/King/King.hpp

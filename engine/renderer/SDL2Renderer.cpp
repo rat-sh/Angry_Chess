@@ -1,5 +1,5 @@
 #include "engine/renderer/SDL2Renderer.hpp"
-#include "games/angry_chess/ChessPieceTypes.hpp"
+#include "chess/ChessPieceTypes.hpp"
 #include <stdexcept>
 #include <cstring>
 #include <cmath>

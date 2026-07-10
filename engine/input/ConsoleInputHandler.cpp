@@ -4,6 +4,9 @@
 #include <sstream>
 #include <algorithm>
 #include <cctype>
+// POSIX non-blocking stdin check
+#include <sys/select.h>
+#include <unistd.h>
 
 namespace bge {
 
@@ -18,11 +21,20 @@ InputEvent IInputHandler::waitForInput() {
 // ── ConsoleInputHandler ───────────────────────────────────────────────────────
 
 std::optional<InputEvent> ConsoleInputHandler::poll() {
-    // Non-blocking check: peek at stdin
-    // On Linux we can check if data is available, but for simplicity we do a
-    // blocking read only when called from waitForInput().
-    // For poll(), return nullopt immediately if called from the AI branch.
-    return std::nullopt; // Real poll logic: use select() for non-blocking
+    // Non-blocking check: use select() with zero timeout to peek at stdin.
+    // Returns nullopt immediately if no data is available (e.g. during AI turn).
+    fd_set fds;
+    FD_ZERO(&fds);
+    FD_SET(STDIN_FILENO, &fds);
+
+    struct timeval timeout{0, 0}; // zero timeout = non-blocking
+    int ready = select(STDIN_FILENO + 1, &fds, nullptr, nullptr, &timeout);
+
+    if (ready <= 0) return std::nullopt; // nothing to read
+
+    std::string line;
+    if (!std::getline(std::cin, line)) return QuitEvent{};
+    return parseLine(line);
 }
 
 InputEvent ConsoleInputHandler::waitForInput() {

@@ -97,7 +97,7 @@ angry_chess_game: CMakeFiles/angry_chess_game.dir/app/main.cpp.o
 angry_chess_game: CMakeFiles/angry_chess_game.dir/build.make
 angry_chess_game: CMakeFiles/angry_chess_game.dir/compiler_depend.ts
 angry_chess_game: engine/libengine.a
-angry_chess_game: games/angry_chess/libangry_chess.a
+angry_chess_game: chess/libangry_chess.a
 angry_chess_game: engine/libengine.a
 angry_chess_game: CMakeFiles/angry_chess_game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable angry_chess_game"

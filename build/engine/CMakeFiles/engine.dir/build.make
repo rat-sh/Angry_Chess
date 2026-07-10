@@ -100,10 +100,24 @@ engine/CMakeFiles/engine.dir/core/GameEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/core/GameEngine.cpp.s"
 	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/engine/core/GameEngine.cpp -o CMakeFiles/engine.dir/core/GameEngine.cpp.s
 
+engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o: engine/CMakeFiles/engine.dir/flags.make
+engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o: /home/r/game/engine/ai/RandomAI.cpp
+engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o"
+	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o -MF CMakeFiles/engine.dir/ai/RandomAI.cpp.o.d -o CMakeFiles/engine.dir/ai/RandomAI.cpp.o -c /home/r/game/engine/ai/RandomAI.cpp
+
+engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/ai/RandomAI.cpp.i"
+	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/engine/ai/RandomAI.cpp > CMakeFiles/engine.dir/ai/RandomAI.cpp.i
+
+engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/ai/RandomAI.cpp.s"
+	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/engine/ai/RandomAI.cpp -o CMakeFiles/engine.dir/ai/RandomAI.cpp.s
+
 engine/CMakeFiles/engine.dir/board/BoardState.cpp.o: engine/CMakeFiles/engine.dir/flags.make
 engine/CMakeFiles/engine.dir/board/BoardState.cpp.o: /home/r/game/engine/board/BoardState.cpp
 engine/CMakeFiles/engine.dir/board/BoardState.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object engine/CMakeFiles/engine.dir/board/BoardState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engine/CMakeFiles/engine.dir/board/BoardState.cpp.o"
 	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/board/BoardState.cpp.o -MF CMakeFiles/engine.dir/board/BoardState.cpp.o.d -o CMakeFiles/engine.dir/board/BoardState.cpp.o -c /home/r/game/engine/board/BoardState.cpp
 
 engine/CMakeFiles/engine.dir/board/BoardState.cpp.i: cmake_force
@@ -117,7 +131,7 @@ engine/CMakeFiles/engine.dir/board/BoardState.cpp.s: cmake_force
 engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o: engine/CMakeFiles/engine.dir/flags.make
 engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o: /home/r/game/engine/input/ConsoleInputHandler.cpp
 engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o"
 	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o -MF CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o.d -o CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o -c /home/r/game/engine/input/ConsoleInputHandler.cpp
 
 engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.i: cmake_force
@@ -131,7 +145,7 @@ engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.s: cmake_force
 engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o: engine/CMakeFiles/engine.dir/flags.make
 engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o: /home/r/game/engine/renderer/ConsoleRenderer.cpp
 engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o"
 	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o -MF CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o.d -o CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o -c /home/r/game/engine/renderer/ConsoleRenderer.cpp
 
 engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.i: cmake_force
@@ -142,73 +156,27 @@ engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.s"
 	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/engine/renderer/ConsoleRenderer.cpp -o CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.s
 
-engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o: engine/CMakeFiles/engine.dir/flags.make
-engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o: /home/r/game/engine/ai/RandomAI.cpp
-engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o -MF CMakeFiles/engine.dir/ai/RandomAI.cpp.o.d -o CMakeFiles/engine.dir/ai/RandomAI.cpp.o -c /home/r/game/engine/ai/RandomAI.cpp
-
-engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/ai/RandomAI.cpp.i"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/engine/ai/RandomAI.cpp > CMakeFiles/engine.dir/ai/RandomAI.cpp.i
-
-engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/ai/RandomAI.cpp.s"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/engine/ai/RandomAI.cpp -o CMakeFiles/engine.dir/ai/RandomAI.cpp.s
-
-engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o: engine/CMakeFiles/engine.dir/flags.make
-engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o: /home/r/game/engine/ai/MinimaxAI.cpp
-engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o -MF CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o.d -o CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o -c /home/r/game/engine/ai/MinimaxAI.cpp
-
-engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/ai/MinimaxAI.cpp.i"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/engine/ai/MinimaxAI.cpp > CMakeFiles/engine.dir/ai/MinimaxAI.cpp.i
-
-engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/ai/MinimaxAI.cpp.s"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/engine/ai/MinimaxAI.cpp -o CMakeFiles/engine.dir/ai/MinimaxAI.cpp.s
-
-engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o: engine/CMakeFiles/engine.dir/flags.make
-engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o: /home/r/game/engine/statemachine/GameStateMachine.cpp
-engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o: engine/CMakeFiles/engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o -MF CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o.d -o CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o -c /home/r/game/engine/statemachine/GameStateMachine.cpp
-
-engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.i"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/engine/statemachine/GameStateMachine.cpp > CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.i
-
-engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.s"
-	cd /home/r/game/build/engine && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/engine/statemachine/GameStateMachine.cpp -o CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.s
-
 # Object files for target engine
 engine_OBJECTS = \
 "CMakeFiles/engine.dir/core/PluginRegistry.cpp.o" \
 "CMakeFiles/engine.dir/core/GameEngine.cpp.o" \
+"CMakeFiles/engine.dir/ai/RandomAI.cpp.o" \
 "CMakeFiles/engine.dir/board/BoardState.cpp.o" \
 "CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o" \
-"CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o" \
-"CMakeFiles/engine.dir/ai/RandomAI.cpp.o" \
-"CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o" \
-"CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o"
+"CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
 engine/libengine.a: engine/CMakeFiles/engine.dir/core/PluginRegistry.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/core/GameEngine.cpp.o
+engine/libengine.a: engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/board/BoardState.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/input/ConsoleInputHandler.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.o
-engine/libengine.a: engine/CMakeFiles/engine.dir/ai/RandomAI.cpp.o
-engine/libengine.a: engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o
-engine/libengine.a: engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o
 engine/libengine.a: engine/CMakeFiles/engine.dir/build.make
 engine/libengine.a: engine/CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libengine.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libengine.a"
 	cd /home/r/game/build/engine && $(CMAKE_COMMAND) -P CMakeFiles/engine.dir/cmake_clean_target.cmake
 	cd /home/r/game/build/engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 

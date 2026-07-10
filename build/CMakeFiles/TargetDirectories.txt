@@ -15,10 +15,10 @@
 /home/r/game/build/engine/CMakeFiles/test.dir
 /home/r/game/build/engine/CMakeFiles/edit_cache.dir
 /home/r/game/build/engine/CMakeFiles/rebuild_cache.dir
-/home/r/game/build/games/angry_chess/CMakeFiles/angry_chess.dir
-/home/r/game/build/games/angry_chess/CMakeFiles/test.dir
-/home/r/game/build/games/angry_chess/CMakeFiles/edit_cache.dir
-/home/r/game/build/games/angry_chess/CMakeFiles/rebuild_cache.dir
+/home/r/game/build/chess/CMakeFiles/angry_chess.dir
+/home/r/game/build/chess/CMakeFiles/test.dir
+/home/r/game/build/chess/CMakeFiles/edit_cache.dir
+/home/r/game/build/chess/CMakeFiles/rebuild_cache.dir
 /home/r/game/build/tests/CMakeFiles/Experimental.dir
 /home/r/game/build/tests/CMakeFiles/Nightly.dir
 /home/r/game/build/tests/CMakeFiles/Continuous.dir

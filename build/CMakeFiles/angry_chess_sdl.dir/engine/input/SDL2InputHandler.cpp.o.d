@@ -297,5 +297,4 @@ CMakeFiles/angry_chess_sdl.dir/engine/input/SDL2InputHandler.cpp.o: \
  /usr/include/SDL2/SDL_system.h /usr/include/SDL2/SDL_timer.h \
  /usr/include/SDL2/SDL_version.h /usr/include/SDL2/SDL_locale.h \
  /usr/include/SDL2/SDL_misc.h /usr/include/SDL2/SDL_ttf.h \
- /usr/include/SDL2/SDL.h \
- /home/r/game/games/angry_chess/ChessPieceTypes.hpp
+ /usr/include/SDL2/SDL.h /home/r/game/chess/ChessPieceTypes.hpp

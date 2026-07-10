@@ -164,221 +164,197 @@ AngryChessPlugin.cpp.s:
 	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.s
 .PHONY : AngryChessPlugin.cpp.s
 
-FenParser.o: FenParser.cpp.o
-.PHONY : FenParser.o
+ai/StockfishAI/StockfishAI.o: ai/StockfishAI/StockfishAI.cpp.o
+.PHONY : ai/StockfishAI/StockfishAI.o
 
 # target to build an object file
-FenParser.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o
-.PHONY : FenParser.cpp.o
+ai/StockfishAI/StockfishAI.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o
+.PHONY : ai/StockfishAI/StockfishAI.cpp.o
 
-FenParser.i: FenParser.cpp.i
-.PHONY : FenParser.i
+ai/StockfishAI/StockfishAI.i: ai/StockfishAI/StockfishAI.cpp.i
+.PHONY : ai/StockfishAI/StockfishAI.i
 
 # target to preprocess a source file
-FenParser.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.i
-.PHONY : FenParser.cpp.i
+ai/StockfishAI/StockfishAI.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.i
+.PHONY : ai/StockfishAI/StockfishAI.cpp.i
 
-FenParser.s: FenParser.cpp.s
-.PHONY : FenParser.s
+ai/StockfishAI/StockfishAI.s: ai/StockfishAI/StockfishAI.cpp.s
+.PHONY : ai/StockfishAI/StockfishAI.s
 
 # target to generate assembly for a file
-FenParser.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.s
-.PHONY : FenParser.cpp.s
+ai/StockfishAI/StockfishAI.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.s
+.PHONY : ai/StockfishAI/StockfishAI.cpp.s
 
-ai/ChessEvaluator.o: ai/ChessEvaluator.cpp.o
-.PHONY : ai/ChessEvaluator.o
+notation/Fen/FenParser.o: notation/Fen/FenParser.cpp.o
+.PHONY : notation/Fen/FenParser.o
 
 # target to build an object file
-ai/ChessEvaluator.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o
-.PHONY : ai/ChessEvaluator.cpp.o
+notation/Fen/FenParser.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o
+.PHONY : notation/Fen/FenParser.cpp.o
 
-ai/ChessEvaluator.i: ai/ChessEvaluator.cpp.i
-.PHONY : ai/ChessEvaluator.i
+notation/Fen/FenParser.i: notation/Fen/FenParser.cpp.i
+.PHONY : notation/Fen/FenParser.i
 
 # target to preprocess a source file
-ai/ChessEvaluator.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.i
-.PHONY : ai/ChessEvaluator.cpp.i
+notation/Fen/FenParser.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.i
+.PHONY : notation/Fen/FenParser.cpp.i
 
-ai/ChessEvaluator.s: ai/ChessEvaluator.cpp.s
-.PHONY : ai/ChessEvaluator.s
+notation/Fen/FenParser.s: notation/Fen/FenParser.cpp.s
+.PHONY : notation/Fen/FenParser.s
 
 # target to generate assembly for a file
-ai/ChessEvaluator.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.s
-.PHONY : ai/ChessEvaluator.cpp.s
+notation/Fen/FenParser.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.s
+.PHONY : notation/Fen/FenParser.cpp.s
 
-pieces/Bishop.o: pieces/Bishop.cpp.o
-.PHONY : pieces/Bishop.o
+pieces/Bishop/Bishop.o: pieces/Bishop/Bishop.cpp.o
+.PHONY : pieces/Bishop/Bishop.o
 
 # target to build an object file
-pieces/Bishop.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o
-.PHONY : pieces/Bishop.cpp.o
+pieces/Bishop/Bishop.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o
+.PHONY : pieces/Bishop/Bishop.cpp.o
 
-pieces/Bishop.i: pieces/Bishop.cpp.i
-.PHONY : pieces/Bishop.i
+pieces/Bishop/Bishop.i: pieces/Bishop/Bishop.cpp.i
+.PHONY : pieces/Bishop/Bishop.i
 
 # target to preprocess a source file
-pieces/Bishop.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.i
-.PHONY : pieces/Bishop.cpp.i
+pieces/Bishop/Bishop.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.i
+.PHONY : pieces/Bishop/Bishop.cpp.i
 
-pieces/Bishop.s: pieces/Bishop.cpp.s
-.PHONY : pieces/Bishop.s
+pieces/Bishop/Bishop.s: pieces/Bishop/Bishop.cpp.s
+.PHONY : pieces/Bishop/Bishop.s
 
 # target to generate assembly for a file
-pieces/Bishop.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.s
-.PHONY : pieces/Bishop.cpp.s
+pieces/Bishop/Bishop.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.s
+.PHONY : pieces/Bishop/Bishop.cpp.s
 
-pieces/King.o: pieces/King.cpp.o
-.PHONY : pieces/King.o
+pieces/King/King.o: pieces/King/King.cpp.o
+.PHONY : pieces/King/King.o
 
 # target to build an object file
-pieces/King.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o
-.PHONY : pieces/King.cpp.o
+pieces/King/King.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o
+.PHONY : pieces/King/King.cpp.o
 
-pieces/King.i: pieces/King.cpp.i
-.PHONY : pieces/King.i
+pieces/King/King.i: pieces/King/King.cpp.i
+.PHONY : pieces/King/King.i
 
 # target to preprocess a source file
-pieces/King.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.i
-.PHONY : pieces/King.cpp.i
+pieces/King/King.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.i
+.PHONY : pieces/King/King.cpp.i
 
-pieces/King.s: pieces/King.cpp.s
-.PHONY : pieces/King.s
+pieces/King/King.s: pieces/King/King.cpp.s
+.PHONY : pieces/King/King.s
 
 # target to generate assembly for a file
-pieces/King.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.s
-.PHONY : pieces/King.cpp.s
+pieces/King/King.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.s
+.PHONY : pieces/King/King.cpp.s
 
-pieces/Knight.o: pieces/Knight.cpp.o
-.PHONY : pieces/Knight.o
+pieces/Knight/Knight.o: pieces/Knight/Knight.cpp.o
+.PHONY : pieces/Knight/Knight.o
 
 # target to build an object file
-pieces/Knight.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o
-.PHONY : pieces/Knight.cpp.o
+pieces/Knight/Knight.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o
+.PHONY : pieces/Knight/Knight.cpp.o
 
-pieces/Knight.i: pieces/Knight.cpp.i
-.PHONY : pieces/Knight.i
+pieces/Knight/Knight.i: pieces/Knight/Knight.cpp.i
+.PHONY : pieces/Knight/Knight.i
 
 # target to preprocess a source file
-pieces/Knight.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.i
-.PHONY : pieces/Knight.cpp.i
+pieces/Knight/Knight.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.i
+.PHONY : pieces/Knight/Knight.cpp.i
 
-pieces/Knight.s: pieces/Knight.cpp.s
-.PHONY : pieces/Knight.s
+pieces/Knight/Knight.s: pieces/Knight/Knight.cpp.s
+.PHONY : pieces/Knight/Knight.s
 
 # target to generate assembly for a file
-pieces/Knight.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.s
-.PHONY : pieces/Knight.cpp.s
+pieces/Knight/Knight.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.s
+.PHONY : pieces/Knight/Knight.cpp.s
 
-pieces/Pawn.o: pieces/Pawn.cpp.o
-.PHONY : pieces/Pawn.o
+pieces/Pawn/Pawn.o: pieces/Pawn/Pawn.cpp.o
+.PHONY : pieces/Pawn/Pawn.o
 
 # target to build an object file
-pieces/Pawn.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o
-.PHONY : pieces/Pawn.cpp.o
+pieces/Pawn/Pawn.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o
+.PHONY : pieces/Pawn/Pawn.cpp.o
 
-pieces/Pawn.i: pieces/Pawn.cpp.i
-.PHONY : pieces/Pawn.i
+pieces/Pawn/Pawn.i: pieces/Pawn/Pawn.cpp.i
+.PHONY : pieces/Pawn/Pawn.i
 
 # target to preprocess a source file
-pieces/Pawn.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.i
-.PHONY : pieces/Pawn.cpp.i
+pieces/Pawn/Pawn.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.i
+.PHONY : pieces/Pawn/Pawn.cpp.i
 
-pieces/Pawn.s: pieces/Pawn.cpp.s
-.PHONY : pieces/Pawn.s
+pieces/Pawn/Pawn.s: pieces/Pawn/Pawn.cpp.s
+.PHONY : pieces/Pawn/Pawn.s
 
 # target to generate assembly for a file
-pieces/Pawn.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.s
-.PHONY : pieces/Pawn.cpp.s
+pieces/Pawn/Pawn.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.s
+.PHONY : pieces/Pawn/Pawn.cpp.s
 
-pieces/Queen.o: pieces/Queen.cpp.o
-.PHONY : pieces/Queen.o
+pieces/Queen/Queen.o: pieces/Queen/Queen.cpp.o
+.PHONY : pieces/Queen/Queen.o
 
 # target to build an object file
-pieces/Queen.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o
-.PHONY : pieces/Queen.cpp.o
+pieces/Queen/Queen.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o
+.PHONY : pieces/Queen/Queen.cpp.o
 
-pieces/Queen.i: pieces/Queen.cpp.i
-.PHONY : pieces/Queen.i
+pieces/Queen/Queen.i: pieces/Queen/Queen.cpp.i
+.PHONY : pieces/Queen/Queen.i
 
 # target to preprocess a source file
-pieces/Queen.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.i
-.PHONY : pieces/Queen.cpp.i
+pieces/Queen/Queen.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.i
+.PHONY : pieces/Queen/Queen.cpp.i
 
-pieces/Queen.s: pieces/Queen.cpp.s
-.PHONY : pieces/Queen.s
+pieces/Queen/Queen.s: pieces/Queen/Queen.cpp.s
+.PHONY : pieces/Queen/Queen.s
 
 # target to generate assembly for a file
-pieces/Queen.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.s
-.PHONY : pieces/Queen.cpp.s
+pieces/Queen/Queen.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.s
+.PHONY : pieces/Queen/Queen.cpp.s
 
-pieces/Rook.o: pieces/Rook.cpp.o
-.PHONY : pieces/Rook.o
+pieces/Rook/Rook.o: pieces/Rook/Rook.cpp.o
+.PHONY : pieces/Rook/Rook.o
 
 # target to build an object file
-pieces/Rook.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o
-.PHONY : pieces/Rook.cpp.o
+pieces/Rook/Rook.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o
+.PHONY : pieces/Rook/Rook.cpp.o
 
-pieces/Rook.i: pieces/Rook.cpp.i
-.PHONY : pieces/Rook.i
-
-# target to preprocess a source file
-pieces/Rook.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.i
-.PHONY : pieces/Rook.cpp.i
-
-pieces/Rook.s: pieces/Rook.cpp.s
-.PHONY : pieces/Rook.s
-
-# target to generate assembly for a file
-pieces/Rook.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.s
-.PHONY : pieces/Rook.cpp.s
-
-rules/CastlingRule.o: rules/CastlingRule.cpp.o
-.PHONY : rules/CastlingRule.o
-
-# target to build an object file
-rules/CastlingRule.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o
-.PHONY : rules/CastlingRule.cpp.o
-
-rules/CastlingRule.i: rules/CastlingRule.cpp.i
-.PHONY : rules/CastlingRule.i
+pieces/Rook/Rook.i: pieces/Rook/Rook.cpp.i
+.PHONY : pieces/Rook/Rook.i
 
 # target to preprocess a source file
-rules/CastlingRule.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.i
-.PHONY : rules/CastlingRule.cpp.i
+pieces/Rook/Rook.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.i
+.PHONY : pieces/Rook/Rook.cpp.i
 
-rules/CastlingRule.s: rules/CastlingRule.cpp.s
-.PHONY : rules/CastlingRule.s
+pieces/Rook/Rook.s: pieces/Rook/Rook.cpp.s
+.PHONY : pieces/Rook/Rook.s
 
 # target to generate assembly for a file
-rules/CastlingRule.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.s
-.PHONY : rules/CastlingRule.cpp.s
+pieces/Rook/Rook.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.s
+.PHONY : pieces/Rook/Rook.cpp.s
 
 rules/CheckDetector.o: rules/CheckDetector.cpp.o
 .PHONY : rules/CheckDetector.o
@@ -428,29 +404,53 @@ rules/ChessRules.cpp.s:
 	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.s
 .PHONY : rules/ChessRules.cpp.s
 
-rules/ChessWinCondition.o: rules/ChessWinCondition.cpp.o
-.PHONY : rules/ChessWinCondition.o
+rules/movement/CastlingRule.o: rules/movement/CastlingRule.cpp.o
+.PHONY : rules/movement/CastlingRule.o
 
 # target to build an object file
-rules/ChessWinCondition.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o
-.PHONY : rules/ChessWinCondition.cpp.o
+rules/movement/CastlingRule.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o
+.PHONY : rules/movement/CastlingRule.cpp.o
 
-rules/ChessWinCondition.i: rules/ChessWinCondition.cpp.i
-.PHONY : rules/ChessWinCondition.i
+rules/movement/CastlingRule.i: rules/movement/CastlingRule.cpp.i
+.PHONY : rules/movement/CastlingRule.i
 
 # target to preprocess a source file
-rules/ChessWinCondition.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.i
-.PHONY : rules/ChessWinCondition.cpp.i
+rules/movement/CastlingRule.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.i
+.PHONY : rules/movement/CastlingRule.cpp.i
 
-rules/ChessWinCondition.s: rules/ChessWinCondition.cpp.s
-.PHONY : rules/ChessWinCondition.s
+rules/movement/CastlingRule.s: rules/movement/CastlingRule.cpp.s
+.PHONY : rules/movement/CastlingRule.s
 
 # target to generate assembly for a file
-rules/ChessWinCondition.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.s
-.PHONY : rules/ChessWinCondition.cpp.s
+rules/movement/CastlingRule.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.s
+.PHONY : rules/movement/CastlingRule.cpp.s
+
+rules/win/ChessWinCondition.o: rules/win/ChessWinCondition.cpp.o
+.PHONY : rules/win/ChessWinCondition.o
+
+# target to build an object file
+rules/win/ChessWinCondition.cpp.o:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o
+.PHONY : rules/win/ChessWinCondition.cpp.o
+
+rules/win/ChessWinCondition.i: rules/win/ChessWinCondition.cpp.i
+.PHONY : rules/win/ChessWinCondition.i
+
+# target to preprocess a source file
+rules/win/ChessWinCondition.cpp.i:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.i
+.PHONY : rules/win/ChessWinCondition.cpp.i
+
+rules/win/ChessWinCondition.s: rules/win/ChessWinCondition.cpp.s
+.PHONY : rules/win/ChessWinCondition.s
+
+# target to generate assembly for a file
+rules/win/ChessWinCondition.cpp.s:
+	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f games/angry_chess/CMakeFiles/angry_chess.dir/build.make games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.s
+.PHONY : rules/win/ChessWinCondition.cpp.s
 
 # Help Target
 help:
@@ -465,42 +465,42 @@ help:
 	@echo "... AngryChessPlugin.o"
 	@echo "... AngryChessPlugin.i"
 	@echo "... AngryChessPlugin.s"
-	@echo "... FenParser.o"
-	@echo "... FenParser.i"
-	@echo "... FenParser.s"
-	@echo "... ai/ChessEvaluator.o"
-	@echo "... ai/ChessEvaluator.i"
-	@echo "... ai/ChessEvaluator.s"
-	@echo "... pieces/Bishop.o"
-	@echo "... pieces/Bishop.i"
-	@echo "... pieces/Bishop.s"
-	@echo "... pieces/King.o"
-	@echo "... pieces/King.i"
-	@echo "... pieces/King.s"
-	@echo "... pieces/Knight.o"
-	@echo "... pieces/Knight.i"
-	@echo "... pieces/Knight.s"
-	@echo "... pieces/Pawn.o"
-	@echo "... pieces/Pawn.i"
-	@echo "... pieces/Pawn.s"
-	@echo "... pieces/Queen.o"
-	@echo "... pieces/Queen.i"
-	@echo "... pieces/Queen.s"
-	@echo "... pieces/Rook.o"
-	@echo "... pieces/Rook.i"
-	@echo "... pieces/Rook.s"
-	@echo "... rules/CastlingRule.o"
-	@echo "... rules/CastlingRule.i"
-	@echo "... rules/CastlingRule.s"
+	@echo "... ai/StockfishAI/StockfishAI.o"
+	@echo "... ai/StockfishAI/StockfishAI.i"
+	@echo "... ai/StockfishAI/StockfishAI.s"
+	@echo "... notation/Fen/FenParser.o"
+	@echo "... notation/Fen/FenParser.i"
+	@echo "... notation/Fen/FenParser.s"
+	@echo "... pieces/Bishop/Bishop.o"
+	@echo "... pieces/Bishop/Bishop.i"
+	@echo "... pieces/Bishop/Bishop.s"
+	@echo "... pieces/King/King.o"
+	@echo "... pieces/King/King.i"
+	@echo "... pieces/King/King.s"
+	@echo "... pieces/Knight/Knight.o"
+	@echo "... pieces/Knight/Knight.i"
+	@echo "... pieces/Knight/Knight.s"
+	@echo "... pieces/Pawn/Pawn.o"
+	@echo "... pieces/Pawn/Pawn.i"
+	@echo "... pieces/Pawn/Pawn.s"
+	@echo "... pieces/Queen/Queen.o"
+	@echo "... pieces/Queen/Queen.i"
+	@echo "... pieces/Queen/Queen.s"
+	@echo "... pieces/Rook/Rook.o"
+	@echo "... pieces/Rook/Rook.i"
+	@echo "... pieces/Rook/Rook.s"
 	@echo "... rules/CheckDetector.o"
 	@echo "... rules/CheckDetector.i"
 	@echo "... rules/CheckDetector.s"
 	@echo "... rules/ChessRules.o"
 	@echo "... rules/ChessRules.i"
 	@echo "... rules/ChessRules.s"
-	@echo "... rules/ChessWinCondition.o"
-	@echo "... rules/ChessWinCondition.i"
-	@echo "... rules/ChessWinCondition.s"
+	@echo "... rules/movement/CastlingRule.o"
+	@echo "... rules/movement/CastlingRule.i"
+	@echo "... rules/movement/CastlingRule.s"
+	@echo "... rules/win/ChessWinCondition.o"
+	@echo "... rules/win/ChessWinCondition.i"
+	@echo "... rules/win/ChessWinCondition.s"
 .PHONY : help
 
 

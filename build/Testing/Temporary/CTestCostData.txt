@@ -72,46 +72,130 @@ CheckDetector: 0 0
 Win 0 0
 Win 0 0
 Win 0 0
-BoardState: initial state is empty 1 0.0048467
-BoardState: setCell and typeAt 1 0.0050851
-BoardState: clearCell 1 0.00588575
-BoardState: applyMove basic move 1 0.0046493
-BoardState: applyMove capture removes enemy piece 1 0.00704524
-BoardState: applyMove promotion 1 0.00605032
-BoardState: findFirst locates king 1 0.0122923
-BoardState: applyMove flips active player 1 0.00715619
-Position: algebraic notation 1 0.00728185
-EventBus: subscribe and publish 1 0.00710994
-EventBus: multiple subscribers 1 0.0058055
-EventBus: unsubscribe 1 0.00430064
-EventBus: subscriberCount 1 0.00712291
-EventBus: unsubscribing non-existent ID is a no-op 1 0.00661285
-ChessRules: pawn moves forward 1 0.00611584
-ChessRules: pawn blocked by piece 1 0.00526594
-ChessRules: pawn captures diagonally 1 0.00798766
-ChessRules: knight moves L-shape 1 0.00555719
-ChessRules: knight blocked by friendly pieces reduces moves 1 0.00575061
-ChessRules: bishop moves diagonally 1 0.00691266
-ChessRules: rook moves orthogonally 1 0.00465806
-ChessRules: queen combines rook and bishop 1 0.00742535
-ChessRules: initial position legal moves count 1 0.00583111
-ChessRules: validateMove returns correct result 1 0.00690584
-ChessRules: pawn promotion generates 4 choices 1 0.00860272
-CheckDetector: king not in check on empty board 1 0.0066455
-CheckDetector: rook gives check 1 0.00849678
-CheckDetector: bishop gives check 1 0.0064563
-CheckDetector: piece blocking check 1 0.00728865
-CheckDetector: knight gives check 1 0.00732344
-ChessRules: move that leaves king in check is illegal 1 0.00435307
-ChessRules: checkmate detection — fool's mate 1 0.00678527
-ChessRules: stalemate detection 1 0.00749898
-CheckDetector: pawn gives check 1 0.0040077
-Win conditions: fifty-move rule draw 1 0.00527876
-Win conditions: game ongoing after few moves 1 0.00515668
-Win conditions: check is reported 1 0.00468531
-FenParser: parse starting position 1 0.0274425
-FenParser: parse custom position with en-passant 1 0.00580964
-FenParser: generate matches parse round-trip 1 0.00726668
-FenParser: legal moves from FEN position (Scholar's mate setup) 1 0.00576639
-FenParser: halfmove clock and full move number 1 0.00659848
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 1
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 0
+Position: 0 0
+EventBus: 0 0
+EventBus: 0 0
+EventBus: 0 1
+EventBus: 0 1
+EventBus: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+CheckDetector: 0 0
+Win 0 0
+Win 0 0
+Win 0 0
+FenParser: 0 0
+FenParser: 0 0
+FenParser: 0 0
+FenParser: 0 0
+FenParser: 0 0
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 1
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 0
+BoardState: 0 0
+Position: 0 0
+EventBus: 0 0
+EventBus: 0 0
+EventBus: 0 1
+EventBus: 0 1
+EventBus: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+CheckDetector: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+ChessRules: 0 0
+CheckDetector: 0 0
+Win 0 0
+Win 0 0
+Win 0 0
+FenParser: 0 0
+FenParser: 0 0
+FenParser: 0 0
+FenParser: 0 0
+FenParser: 0 0
+BoardState: initial state is empty 1 0.00424463
+BoardState: setCell and typeAt 1 0.00354469
+BoardState: clearCell 1 0.00496589
+BoardState: applyMove basic move 1 0.0040267
+BoardState: applyMove capture removes enemy piece 1 0.00388108
+BoardState: applyMove promotion 1 0.00491314
+BoardState: findFirst locates king 1 0.00414494
+BoardState: applyMove flips active player 1 0.00392173
+Position: algebraic notation 1 0.00348697
+EventBus: subscribe and publish 1 0.0051132
+EventBus: multiple subscribers 1 0.00356456
+EventBus: unsubscribe 1 0.00379004
+EventBus: subscriberCount 1 0.00380028
+EventBus: unsubscribing non-existent ID is a no-op 1 0.00457286
+ChessRules: pawn moves forward 1 0.00417963
+ChessRules: pawn blocked by piece 1 0.00359987
+ChessRules: pawn captures diagonally 1 0.0052899
+ChessRules: knight moves L-shape 1 0.0041318
+ChessRules: knight blocked by friendly pieces reduces moves 1 0.00382428
+ChessRules: bishop moves diagonally 1 0.00504056
+ChessRules: rook moves orthogonally 1 0.00435541
+ChessRules: queen combines rook and bishop 1 0.0041823
+ChessRules: initial position legal moves count 1 0.00402678
+ChessRules: validateMove returns correct result 1 0.00688762
+ChessRules: pawn promotion generates 4 choices 1 0.00390021
+CheckDetector: king not in check on empty board 1 0.00388214
+CheckDetector: rook gives check 1 0.00550262
+CheckDetector: bishop gives check 1 0.00413783
+CheckDetector: piece blocking check 1 0.00396477
+CheckDetector: knight gives check 1 0.00501325
+ChessRules: move that leaves king in check is illegal 1 0.00522399
+ChessRules: checkmate detection — fool's mate 1 0.00472635
+ChessRules: stalemate detection 1 0.00653588
+CheckDetector: pawn gives check 1 0.00495147
+Win conditions: fifty-move rule draw 1 0.00405139
+Win conditions: game ongoing after few moves 1 0.00476676
+Win conditions: check is reported 1 0.00448094
+FenParser: parse starting position 1 0.0046279
+FenParser: parse custom position with en-passant 1 0.00531289
+FenParser: generate matches parse round-trip 1 0.00546839
+FenParser: legal moves from FEN position (Scholar's mate setup) 1 0.00547385
+FenParser: halfmove clock and full move number 1 0.0059581
 ---

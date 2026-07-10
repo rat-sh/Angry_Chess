@@ -247,7 +247,7 @@ tests/CMakeFiles/test_angry_chess.dir/angry_chess/test_win_conditions.cpp.o: \
  /home/r/game/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_test_registry.hpp \
  /home/r/game/build/_deps/catch2-src/src/catch2/../catch2/interfaces/catch_interfaces_test_invoker.hpp \
  /home/r/game/build/_deps/catch2-src/src/catch2/../catch2/internal/catch_preprocessor_remove_parens.hpp \
- /home/r/game/games/angry_chess/rules/ChessRules.hpp \
+ /home/r/game/chess/rules/ChessRules.hpp \
  /home/r/game/engine/rules/IGameRules.hpp \
  /home/r/game/engine/core/Types.hpp /usr/include/c++/14/cmath \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -276,4 +276,4 @@ tests/CMakeFiles/test_angry_chess.dir/angry_chess/test_win_conditions.cpp.o: \
  /home/r/game/engine/rules/Move.hpp /usr/include/c++/14/utility \
  /usr/include/c++/14/bits/stl_relops.h \
  /home/r/game/engine/rules/MoveResult.hpp \
- /home/r/game/games/angry_chess/ChessPieceTypes.hpp
+ /home/r/game/chess/ChessPieceTypes.hpp

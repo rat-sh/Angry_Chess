@@ -727,6 +727,7 @@ tests/CMakeFiles/test_angry_chess.dir/angry_chess/test_fen.cpp.o: /home/r/game/t
   /home/r/game/engine/rules/MoveResult.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
   /home/r/game/games/angry_chess/FenParser.hpp \
+  /home/r/game/games/angry_chess/notation/Fen/FenParser.hpp \
   /home/r/game/games/angry_chess/rules/ChessRules.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -2046,6 +2047,8 @@ _deps/catch2-src/src/catch2/catch_section_info.hpp:
 /usr/include/c++/14/debug/debug.h:
 
 /usr/include/c++/14/tr1/hypergeometric.tcc:
+
+/home/r/game/games/angry_chess/notation/Fen/FenParser.hpp:
 
 _deps/catch2-src/src/catch2/internal/catch_decomposer.hpp:
 

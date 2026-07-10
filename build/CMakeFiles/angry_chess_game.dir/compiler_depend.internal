@@ -16,12 +16,11 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o
  /home/r/game/engine/rules/IGameRules.hpp
  /home/r/game/engine/rules/Move.hpp
  /home/r/game/engine/rules/MoveResult.hpp
- /home/r/game/engine/statemachine/GameStateMachine.hpp
- /home/r/game/engine/statemachine/IGameState.hpp
- /home/r/game/engine/statemachine/States.hpp
  /home/r/game/engine/theme/ITheme.hpp
  /home/r/game/games/angry_chess/AngryChessPlugin.hpp
  /home/r/game/games/angry_chess/FenParser.hpp
+ /home/r/game/games/angry_chess/notation/Fen/FenParser.hpp
+ /home/r/game/games/angry_chess/notation/Pgn/PgnLogger.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h

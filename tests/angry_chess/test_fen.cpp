@@ -1,7 +1,7 @@
 #include <catch2/catch_test_macros.hpp>
-#include "games/angry_chess/FenParser.hpp"
-#include "games/angry_chess/rules/ChessRules.hpp"
-#include "games/angry_chess/ChessPieceTypes.hpp"
+#include "chess/FenParser.hpp"
+#include "chess/rules/ChessRules.hpp"
+#include "chess/ChessPieceTypes.hpp"
 
 using namespace bge;
 using namespace angry_chess;

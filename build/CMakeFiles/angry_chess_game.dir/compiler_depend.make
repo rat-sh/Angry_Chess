@@ -15,12 +15,11 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o: /home/r/game/app/main.cpp \
   /home/r/game/engine/rules/IGameRules.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/engine/rules/MoveResult.hpp \
-  /home/r/game/engine/statemachine/GameStateMachine.hpp \
-  /home/r/game/engine/statemachine/IGameState.hpp \
-  /home/r/game/engine/statemachine/States.hpp \
   /home/r/game/engine/theme/ITheme.hpp \
   /home/r/game/games/angry_chess/AngryChessPlugin.hpp \
   /home/r/game/games/angry_chess/FenParser.hpp \
+  /home/r/game/games/angry_chess/notation/Fen/FenParser.hpp \
+  /home/r/game/games/angry_chess/notation/Pgn/PgnLogger.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -517,7 +516,19 @@ engine/libengine.a:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/14/bits/uniform_int_dist.h:
+
+/usr/include/c++/14/vector:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/14/bits/shared_ptr_base.h:
+
+/usr/include/c++/14/tr1/beta_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -579,6 +590,10 @@ engine/libengine.a:
 
 /usr/include/syscall.h:
 
+/usr/include/c++/14/bits/stl_bvector.h:
+
+/usr/include/c++/14/bits/new_allocator.h:
+
 /usr/include/c++/14/bits/locale_classes.h:
 
 /usr/include/c++/14/bits/nested_exception.h:
@@ -631,6 +646,10 @@ engine/libengine.a:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
+/usr/include/c++/14/bits/ranges_uninitialized.h:
+
+/usr/include/c++/14/bits/specfun.h:
+
 /usr/lib/x86_64-linux-gnu/crtn.o:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
@@ -657,15 +676,21 @@ engine/libengine.a:
 
 /home/r/game/games/angry_chess/AngryChessPlugin.hpp:
 
-/usr/include/c++/14/bits/new_allocator.h:
+/home/r/game/games/angry_chess/notation/Pgn/PgnLogger.hpp:
 
-/usr/include/c++/14/bits/stl_bvector.h:
+/home/r/game/engine/core/PgnLogger.hpp:
 
-/usr/include/c++/14/bits/ranges_uninitialized.h:
+/usr/include/c++/14/bits/charconv.h:
 
-/usr/include/c++/14/bits/specfun.h:
+/usr/include/c++/14/bits/basic_ios.tcc:
 
-/home/r/game/engine/statemachine/IGameState.hpp:
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/14/bits/iterator_concepts.h:
+
+/lib/x86_64-linux-gnu/libc.so.6:
+
+/usr/include/c++/14/pstl/glue_memory_defs.h:
 
 /home/r/game/engine/rules/MoveResult.hpp:
 
@@ -689,49 +714,21 @@ engine/libengine.a:
 
 /usr/include/asm-generic/int-ll64.h:
 
+/usr/include/c++/14/bits/shared_ptr.h:
+
+/usr/include/unistd.h:
+
+/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
+
 /usr/include/c++/14/bits/ptr_traits.h:
 
 /usr/include/c++/14/bits/locale_facets_nonio.tcc:
 
 /home/r/game/engine/core/EventBus.hpp:
 
-/home/r/game/engine/core/PgnLogger.hpp:
-
-/usr/include/c++/14/bits/charconv.h:
-
-/usr/include/c++/14/bits/basic_ios.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/c++/14/bits/iterator_concepts.h:
-
-/lib/x86_64-linux-gnu/libc.so.6:
-
-/usr/include/c++/14/pstl/glue_memory_defs.h:
-
-/usr/include/c++/14/tr1/beta_function.tcc:
-
-/usr/include/c++/14/bits/shared_ptr_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/c++/14/bits/uniform_int_dist.h:
-
-/usr/include/c++/14/vector:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
 /home/r/game/engine/core/PluginRegistry.hpp:
 
 /usr/include/c++/14/tuple:
-
-/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
-
-/usr/include/c++/14/bits/shared_ptr.h:
-
-/usr/include/unistd.h:
 
 /usr/lib/linux/uapi/x86/asm/posix_types_64.h:
 
@@ -743,13 +740,7 @@ engine/libengine.a:
 
 /usr/include/c++/14/iosfwd:
 
-/home/r/game/engine/statemachine/GameStateMachine.hpp:
-
 /home/r/game/engine/input/InputEvent.hpp:
-
-/usr/include/c++/14/bits/stl_raw_storage_iter.h:
-
-/usr/include/c++/14/bits/basic_ios.h:
 
 /home/r/game/engine/input/IInputHandler.hpp:
 
@@ -831,8 +822,6 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 
 /usr/include/c++/14/bits/std_abs.h:
 
-/home/r/game/engine/statemachine/States.hpp:
-
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/14/bits/algorithmfwd.h:
@@ -841,15 +830,19 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 
 /usr/include/c++/14/bits/codecvt.h:
 
+/usr/include/c++/14/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/14/bits/basic_ios.h:
+
 /usr/include/c++/14/bits/locale_facets.h:
 
 /usr/include/c++/14/bits/basic_string.h:
 
 /usr/include/c++/14/tr1/riemann_zeta.tcc:
 
-/usr/include/c++/14/bits/ranges_util.h:
-
 /usr/include/c++/14/bits/stl_vector.h:
+
+/usr/include/c++/14/bits/ranges_util.h:
 
 /usr/include/c++/14/bits/basic_string.tcc:
 
@@ -859,9 +852,7 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
-/usr/include/c++/14/bits/functexcept.h:
-
-/usr/include/pthread.h:
+/usr/include/c++/14/bits/cpp_type_traits.h:
 
 /usr/include/c++/14/ext/aligned_buffer.h:
 
@@ -870,8 +861,6 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 /usr/include/c++/14/bits/align.h:
 
 /usr/include/c++/14/bits/concept_check.h:
-
-/usr/include/c++/14/bits/cpp_type_traits.h:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
 
@@ -902,6 +891,10 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 /usr/include/c++/14/tr1/legendre_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/14/bits/functexcept.h:
+
+/usr/include/pthread.h:
 
 /usr/include/c++/14/bits/fstream.tcc:
 
@@ -1049,6 +1042,8 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 
 /usr/include/c++/14/tr1/hypergeometric.tcc:
 
+/home/r/game/games/angry_chess/notation/Fen/FenParser.hpp:
+
 /usr/include/c++/14/tr1/modified_bessel_func.tcc:
 
 /usr/include/c++/14/stdexcept:
@@ -1128,3 +1123,5 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o:
 /usr/include/c++/14/bits/ranges_algobase.h:
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:

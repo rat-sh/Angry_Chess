@@ -1,1 +1,1 @@
-/usr/bin/c++ -g -fsanitize=address,undefined -Wl,--dependency-file=CMakeFiles/angry_chess_game.dir/link.d CMakeFiles/angry_chess_game.dir/app/main.cpp.o -o angry_chess_game  engine/libengine.a games/angry_chess/libangry_chess.a engine/libengine.a
+/usr/bin/c++ -g -fsanitize=address,undefined -Wl,--dependency-file=CMakeFiles/angry_chess_game.dir/link.d CMakeFiles/angry_chess_game.dir/app/main.cpp.o -o angry_chess_game  engine/libengine.a chess/libangry_chess.a engine/libengine.a

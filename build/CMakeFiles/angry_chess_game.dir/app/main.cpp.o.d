@@ -265,10 +265,7 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o: /home/r/game/app/main.cpp \
  /usr/include/x86_64-linux-gnu/sys/syscall.h \
  /usr/lib/linux/uapi/x86/asm/unistd.h \
  /usr/lib/linux/uapi/x86/asm/unistd_64.h \
- /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /home/r/game/engine/statemachine/GameStateMachine.hpp \
- /home/r/game/engine/statemachine/IGameState.hpp \
- /home/r/game/engine/statemachine/States.hpp /usr/include/c++/14/memory \
+ /usr/include/x86_64-linux-gnu/bits/syscall.h /usr/include/c++/14/memory \
  /usr/include/c++/14/bits/stl_raw_storage_iter.h \
  /usr/include/c++/14/bits/shared_ptr_atomic.h \
  /usr/include/c++/14/backward/auto_ptr.h \
@@ -277,8 +274,9 @@ CMakeFiles/angry_chess_game.dir/app/main.cpp.o: /home/r/game/app/main.cpp \
  /usr/include/c++/14/pstl/execution_defs.h \
  /home/r/game/engine/core/PluginRegistry.hpp \
  /home/r/game/engine/core/PgnLogger.hpp \
- /home/r/game/games/angry_chess/AngryChessPlugin.hpp \
- /home/r/game/games/angry_chess/FenParser.hpp \
+ /home/r/game/chess/notation/Pgn/PgnLogger.hpp \
+ /home/r/game/chess/AngryChessPlugin.hpp /home/r/game/chess/FenParser.hpp \
+ /home/r/game/chess/notation/Fen/FenParser.hpp \
  /usr/include/c++/14/iostream /usr/include/c++/14/fstream \
  /usr/include/x86_64-linux-gnu/c++/14/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/14/bits/c++io.h \

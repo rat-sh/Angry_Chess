@@ -72,94 +72,122 @@ include games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
 games/angry_chess/CMakeFiles/angry_chess.dir/codegen:
 .PHONY : games/angry_chess/CMakeFiles/angry_chess.dir/codegen
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o: /home/r/game/games/angry_chess/pieces/Pawn.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o -c /home/r/game/games/angry_chess/pieces/Pawn.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o: /home/r/game/games/angry_chess/pieces/Pawn/Pawn.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o -c /home/r/game/games/angry_chess/pieces/Pawn/Pawn.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Pawn.cpp > CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Pawn/Pawn.cpp > CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Pawn.cpp -o CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Pawn/Pawn.cpp -o CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o: /home/r/game/games/angry_chess/pieces/Knight.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o -c /home/r/game/games/angry_chess/pieces/Knight.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o: /home/r/game/games/angry_chess/pieces/Knight/Knight.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o -c /home/r/game/games/angry_chess/pieces/Knight/Knight.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Knight.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Knight.cpp > CMakeFiles/angry_chess.dir/pieces/Knight.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Knight/Knight.cpp > CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Knight.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Knight.cpp -o CMakeFiles/angry_chess.dir/pieces/Knight.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Knight/Knight.cpp -o CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o: /home/r/game/games/angry_chess/pieces/Bishop.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o -c /home/r/game/games/angry_chess/pieces/Bishop.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o: /home/r/game/games/angry_chess/pieces/Bishop/Bishop.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o -c /home/r/game/games/angry_chess/pieces/Bishop/Bishop.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Bishop.cpp > CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Bishop/Bishop.cpp > CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Bishop.cpp -o CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Bishop/Bishop.cpp -o CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o: /home/r/game/games/angry_chess/pieces/Rook.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o -c /home/r/game/games/angry_chess/pieces/Rook.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o: /home/r/game/games/angry_chess/pieces/Rook/Rook.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o -c /home/r/game/games/angry_chess/pieces/Rook/Rook.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Rook.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Rook.cpp > CMakeFiles/angry_chess.dir/pieces/Rook.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Rook/Rook.cpp > CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Rook.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Rook.cpp -o CMakeFiles/angry_chess.dir/pieces/Rook.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Rook/Rook.cpp -o CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o: /home/r/game/games/angry_chess/pieces/Queen.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o -c /home/r/game/games/angry_chess/pieces/Queen.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o: /home/r/game/games/angry_chess/pieces/Queen/Queen.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o -c /home/r/game/games/angry_chess/pieces/Queen/Queen.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Queen.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Queen.cpp > CMakeFiles/angry_chess.dir/pieces/Queen.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/Queen/Queen.cpp > CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Queen.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Queen.cpp -o CMakeFiles/angry_chess.dir/pieces/Queen.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/Queen/Queen.cpp -o CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o: /home/r/game/games/angry_chess/pieces/King.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/King.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/King.cpp.o -c /home/r/game/games/angry_chess/pieces/King.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o: /home/r/game/games/angry_chess/pieces/King/King.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o -MF CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o.d -o CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o -c /home/r/game/games/angry_chess/pieces/King/King.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/King.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/King.cpp > CMakeFiles/angry_chess.dir/pieces/King.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/pieces/King/King.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/pieces/King/King.cpp > CMakeFiles/angry_chess.dir/pieces/King/King.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/King.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/King.cpp -o CMakeFiles/angry_chess.dir/pieces/King.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/pieces/King/King.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/pieces/King/King.cpp -o CMakeFiles/angry_chess.dir/pieces/King/King.cpp.s
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o: /home/r/game/games/angry_chess/rules/movement/CastlingRule.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o -MF CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o.d -o CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o -c /home/r/game/games/angry_chess/rules/movement/CastlingRule.cpp
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/rules/movement/CastlingRule.cpp > CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.i
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/rules/movement/CastlingRule.cpp -o CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.s
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o: /home/r/game/games/angry_chess/rules/win/ChessWinCondition.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o -MF CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o.d -o CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o -c /home/r/game/games/angry_chess/rules/win/ChessWinCondition.cpp
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/rules/win/ChessWinCondition.cpp > CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.i
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/rules/win/ChessWinCondition.cpp -o CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.s
 
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o: /home/r/game/games/angry_chess/rules/CheckDetector.cpp
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o"
 	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o -MF CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o.d -o CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o -c /home/r/game/games/angry_chess/rules/CheckDetector.cpp
 
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.i: cmake_force
@@ -169,34 +197,6 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.i: cmake_fo
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.s"
 	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/rules/CheckDetector.cpp -o CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.s
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o: /home/r/game/games/angry_chess/rules/CastlingRule.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o -MF CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o.d -o CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o -c /home/r/game/games/angry_chess/rules/CastlingRule.cpp
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/rules/CastlingRule.cpp > CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.i
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/rules/CastlingRule.cpp -o CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.s
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /home/r/game/games/angry_chess/rules/ChessWinCondition.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o -MF CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o.d -o CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o -c /home/r/game/games/angry_chess/rules/ChessWinCondition.cpp
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/rules/ChessWinCondition.cpp > CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.i
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/rules/ChessWinCondition.cpp -o CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.s
 
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
 games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o: /home/r/game/games/angry_chess/rules/ChessRules.cpp
@@ -212,33 +212,33 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.s"
 	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/rules/ChessRules.cpp -o CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o: /home/r/game/games/angry_chess/ai/ChessEvaluator.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o -MF CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o.d -o CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o -c /home/r/game/games/angry_chess/ai/ChessEvaluator.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o: /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o -MF CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o.d -o CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o -c /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/ai/ChessEvaluator.cpp > CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.cpp > CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/ai/ChessEvaluator.cpp -o CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.cpp -o CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.s
 
-games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
-games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o: /home/r/game/games/angry_chess/FenParser.cpp
-games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o -MF CMakeFiles/angry_chess.dir/FenParser.cpp.o.d -o CMakeFiles/angry_chess.dir/FenParser.cpp.o -c /home/r/game/games/angry_chess/FenParser.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
+games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o: /home/r/game/games/angry_chess/notation/Fen/FenParser.cpp
+games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/r/game/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o -MF CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o.d -o CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o -c /home/r/game/games/angry_chess/notation/Fen/FenParser.cpp
 
-games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/FenParser.cpp.i"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/FenParser.cpp > CMakeFiles/angry_chess.dir/FenParser.cpp.i
+games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.i"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/r/game/games/angry_chess/notation/Fen/FenParser.cpp > CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.i
 
-games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/FenParser.cpp.s"
-	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/FenParser.cpp -o CMakeFiles/angry_chess.dir/FenParser.cpp.s
+games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.s"
+	cd /home/r/game/build/games/angry_chess && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/r/game/games/angry_chess/notation/Fen/FenParser.cpp -o CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.s
 
 games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: games/angry_chess/CMakeFiles/angry_chess.dir/flags.make
 games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: /home/r/game/games/angry_chess/AngryChessPlugin.cpp
@@ -256,35 +256,35 @@ games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.s: cmake_force
 
 # Object files for target angry_chess
 angry_chess_OBJECTS = \
-"CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o" \
-"CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o" \
-"CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o" \
-"CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o" \
-"CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o" \
-"CMakeFiles/angry_chess.dir/pieces/King.cpp.o" \
+"CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o" \
+"CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o" \
+"CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o" \
+"CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o" \
+"CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o" \
+"CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o" \
+"CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o" \
+"CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o" \
 "CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o" \
-"CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o" \
-"CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o" \
 "CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o" \
-"CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o" \
-"CMakeFiles/angry_chess.dir/FenParser.cpp.o" \
+"CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o" \
+"CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o" \
 "CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o"
 
 # External object files for target angry_chess
 angry_chess_EXTERNAL_OBJECTS =
 
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o
 games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o
 games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o
-games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o
+games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o
 games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o
 games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/build.make
 games/angry_chess/libangry_chess.a: games/angry_chess/CMakeFiles/angry_chess.dir/link.txt

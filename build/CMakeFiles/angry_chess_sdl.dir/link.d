@@ -6,7 +6,7 @@ angry_chess_sdl: \
   CMakeFiles/angry_chess_sdl.dir/engine/renderer/SDL2Renderer.cpp.o \
   CMakeFiles/angry_chess_sdl.dir/engine/input/SDL2InputHandler.cpp.o \
   engine/libengine.a \
-  games/angry_chess/libangry_chess.a \
+  chess/libangry_chess.a \
   /usr/lib/x86_64-linux-gnu/libSDL2.so \
   /usr/lib/x86_64-linux-gnu/libSDL2_ttf.so \
   engine/libengine.a \
@@ -100,7 +100,7 @@ CMakeFiles/angry_chess_sdl.dir/engine/input/SDL2InputHandler.cpp.o:
 
 engine/libengine.a:
 
-games/angry_chess/libangry_chess.a:
+chess/libangry_chess.a:
 
 /usr/lib/x86_64-linux-gnu/libSDL2.so:
 

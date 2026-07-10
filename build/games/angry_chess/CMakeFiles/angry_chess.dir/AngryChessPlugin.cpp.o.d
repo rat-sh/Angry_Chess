@@ -273,10 +273,10 @@ games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: \
  /usr/include/c++/14/pstl/glue_memory_defs.h \
  /usr/include/c++/14/pstl/execution_defs.h \
  /home/r/game/games/angry_chess/rules/ChessRules.hpp \
- /home/r/game/games/angry_chess/ai/ChessEvaluator.hpp \
+ /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.hpp \
  /home/r/game/games/angry_chess/theme/ClassicTheme.hpp \
  /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
  /home/r/game/games/angry_chess/theme/AngryTheme.hpp \
- /home/r/game/engine/ai/RandomAI.hpp /home/r/game/engine/ai/MinimaxAI.hpp \
  /home/r/game/engine/renderer/ConsoleRenderer.hpp \
- /home/r/game/engine/input/ConsoleInputHandler.hpp
+ /home/r/game/engine/input/ConsoleInputHandler.hpp \
+ /usr/include/c++/14/iostream

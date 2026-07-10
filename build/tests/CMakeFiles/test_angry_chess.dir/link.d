@@ -7,7 +7,7 @@ test_angry_chess: \
   CMakeFiles/test_angry_chess.dir/angry_chess/test_win_conditions.cpp.o \
   CMakeFiles/test_angry_chess.dir/angry_chess/test_fen.cpp.o \
   ../engine/libengine.a \
-  ../games/angry_chess/libangry_chess.a \
+  ../chess/libangry_chess.a \
   ../_deps/catch2-build/src/libCatch2Maind.a \
   ../engine/libengine.a \
   ../_deps/catch2-build/src/libCatch2d.a \
@@ -55,7 +55,7 @@ CMakeFiles/test_angry_chess.dir/angry_chess/test_fen.cpp.o:
 
 ../engine/libengine.a:
 
-../games/angry_chess/libangry_chess.a:
+../chess/libangry_chess.a:
 
 ../_deps/catch2-build/src/libCatch2Maind.a:
 

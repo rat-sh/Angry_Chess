@@ -6,7 +6,6 @@
 #include "engine/ai/IAIPlayer.hpp"
 #include "engine/theme/ITheme.hpp"
 #include "engine/core/EventBus.hpp"
-#include "engine/statemachine/GameStateMachine.hpp"
 #include <chrono>
 #include <memory>
 #include <string>
@@ -21,10 +20,13 @@ struct GameConfig {
     std::string themeName   {"angry_classic"};
     bool        whiteIsAI   {false};
     bool        blackIsAI   {true};
-    std::string whiteAIName {"minimax"};
-    std::string blackAIName {"minimax"};
+    std::string whiteAIName {"stockfish"};
+    std::string blackAIName {"stockfish"};
     bool        flipped     {false};
     std::chrono::milliseconds aiTimeLimit{500};
+    /// Delay inserted after each AI move (useful for AI vs AI watchability).
+    /// Set to 0 for single-AI games; set to ~600ms for AI vs AI spectator mode.
+    std::chrono::milliseconds aiMoveDelay{0};
 };
 
 /// The central orchestrator.

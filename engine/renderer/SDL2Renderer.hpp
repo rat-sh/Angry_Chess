@@ -52,7 +52,7 @@ public:
 
     // Promotion picker — blocks until user clicks one of 4 pieces
     // Returns: QUEEN=5 ROOK=4 BISHOP=3 KNIGHT=2 (ChessPieceTypes IDs)
-    PieceTypeID showPromotionPicker(Color color);
+    PieceTypeID showPromotionPicker(Color color) override;
 
     bool isOpen() const { return window_ != nullptr; }
 

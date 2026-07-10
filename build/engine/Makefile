@@ -140,30 +140,6 @@ engine/fast:
 	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
-ai/MinimaxAI.o: ai/MinimaxAI.cpp.o
-.PHONY : ai/MinimaxAI.o
-
-# target to build an object file
-ai/MinimaxAI.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.o
-.PHONY : ai/MinimaxAI.cpp.o
-
-ai/MinimaxAI.i: ai/MinimaxAI.cpp.i
-.PHONY : ai/MinimaxAI.i
-
-# target to preprocess a source file
-ai/MinimaxAI.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.i
-.PHONY : ai/MinimaxAI.cpp.i
-
-ai/MinimaxAI.s: ai/MinimaxAI.cpp.s
-.PHONY : ai/MinimaxAI.s
-
-# target to generate assembly for a file
-ai/MinimaxAI.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/ai/MinimaxAI.cpp.s
-.PHONY : ai/MinimaxAI.cpp.s
-
 ai/RandomAI.o: ai/RandomAI.cpp.o
 .PHONY : ai/RandomAI.o
 
@@ -308,30 +284,6 @@ renderer/ConsoleRenderer.cpp.s:
 	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/renderer/ConsoleRenderer.cpp.s
 .PHONY : renderer/ConsoleRenderer.cpp.s
 
-statemachine/GameStateMachine.o: statemachine/GameStateMachine.cpp.o
-.PHONY : statemachine/GameStateMachine.o
-
-# target to build an object file
-statemachine/GameStateMachine.cpp.o:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.o
-.PHONY : statemachine/GameStateMachine.cpp.o
-
-statemachine/GameStateMachine.i: statemachine/GameStateMachine.cpp.i
-.PHONY : statemachine/GameStateMachine.i
-
-# target to preprocess a source file
-statemachine/GameStateMachine.cpp.i:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.i
-.PHONY : statemachine/GameStateMachine.cpp.i
-
-statemachine/GameStateMachine.s: statemachine/GameStateMachine.cpp.s
-.PHONY : statemachine/GameStateMachine.s
-
-# target to generate assembly for a file
-statemachine/GameStateMachine.cpp.s:
-	cd /home/r/game/build && $(MAKE) $(MAKESILENT) -f engine/CMakeFiles/engine.dir/build.make engine/CMakeFiles/engine.dir/statemachine/GameStateMachine.cpp.s
-.PHONY : statemachine/GameStateMachine.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -342,9 +294,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... engine"
-	@echo "... ai/MinimaxAI.o"
-	@echo "... ai/MinimaxAI.i"
-	@echo "... ai/MinimaxAI.s"
 	@echo "... ai/RandomAI.o"
 	@echo "... ai/RandomAI.i"
 	@echo "... ai/RandomAI.s"
@@ -363,9 +312,6 @@ help:
 	@echo "... renderer/ConsoleRenderer.o"
 	@echo "... renderer/ConsoleRenderer.i"
 	@echo "... renderer/ConsoleRenderer.s"
-	@echo "... statemachine/GameStateMachine.o"
-	@echo "... statemachine/GameStateMachine.i"
-	@echo "... statemachine/GameStateMachine.s"
 .PHONY : help
 
 

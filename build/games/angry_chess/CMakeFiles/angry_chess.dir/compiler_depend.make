@@ -3,8 +3,6 @@
 
 games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: /home/r/game/games/angry_chess/AngryChessPlugin.cpp \
   /home/r/game/engine/ai/IAIPlayer.hpp \
-  /home/r/game/engine/ai/MinimaxAI.hpp \
-  /home/r/game/engine/ai/RandomAI.hpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/PluginRegistry.hpp \
   /home/r/game/engine/core/Types.hpp \
@@ -19,7 +17,7 @@ games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: /home/r/gam
   /home/r/game/engine/theme/ITheme.hpp \
   /home/r/game/games/angry_chess/AngryChessPlugin.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/ai/ChessEvaluator.hpp \
+  /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.hpp \
   /home/r/game/games/angry_chess/rules/ChessRules.hpp \
   /home/r/game/games/angry_chess/theme/AngryTheme.hpp \
   /home/r/game/games/angry_chess/theme/ClassicTheme.hpp \
@@ -168,6 +166,7 @@ games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: /home/r/gam
   /usr/include/c++/14/iomanip \
   /usr/include/c++/14/ios \
   /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/iostream \
   /usr/include/c++/14/istream \
   /usr/include/c++/14/limits \
   /usr/include/c++/14/locale \
@@ -349,12 +348,347 @@ games/angry_chess/CMakeFiles/angry_chess.dir/AngryChessPlugin.cpp.o: /home/r/gam
   /usr/lib/linux/uapi/x86/asm/unistd.h \
   /usr/lib/linux/uapi/x86/asm/unistd_64.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o: /home/r/game/games/angry_chess/FenParser.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/ai/StockfishAI/StockfishAI.cpp.o: /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.cpp \
+  /home/r/game/engine/ai/IAIPlayer.hpp \
+  /home/r/game/engine/board/BoardState.hpp \
+  /home/r/game/engine/core/Types.hpp \
+  /home/r/game/engine/rules/Move.hpp \
+  /home/r/game/games/angry_chess/FenParser.hpp \
+  /home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.hpp \
+  /home/r/game/games/angry_chess/notation/Fen/FenParser.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/c++/14/array \
+  /usr/include/c++/14/backward/binders.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/algorithmfwd.h \
+  /usr/include/c++/14/bits/align.h \
+  /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocated_ptr.h \
+  /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/basic_ios.h \
+  /usr/include/c++/14/bits/basic_ios.tcc \
+  /usr/include/c++/14/bits/basic_string.h \
+  /usr/include/c++/14/bits/basic_string.tcc \
+  /usr/include/c++/14/bits/char_traits.h \
+  /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/chrono.h \
+  /usr/include/c++/14/bits/chrono_io.h \
+  /usr/include/c++/14/bits/codecvt.h \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/cxxabi_forced.h \
+  /usr/include/c++/14/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14/bits/enable_special_members.h \
+  /usr/include/c++/14/bits/exception.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/exception_ptr.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/invoke.h \
+  /usr/include/c++/14/bits/ios_base.h \
+  /usr/include/c++/14/bits/istream.tcc \
+  /usr/include/c++/14/bits/iterator_concepts.h \
+  /usr/include/c++/14/bits/locale_classes.h \
+  /usr/include/c++/14/bits/locale_classes.tcc \
+  /usr/include/c++/14/bits/locale_conv.h \
+  /usr/include/c++/14/bits/locale_facets.h \
+  /usr/include/c++/14/bits/locale_facets.tcc \
+  /usr/include/c++/14/bits/locale_facets_nonio.h \
+  /usr/include/c++/14/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/14/bits/localefwd.h \
+  /usr/include/c++/14/bits/max_size_type.h \
+  /usr/include/c++/14/bits/memory_resource.h \
+  /usr/include/c++/14/bits/memoryfwd.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/nested_exception.h \
+  /usr/include/c++/14/bits/new_allocator.h \
+  /usr/include/c++/14/bits/ostream.tcc \
+  /usr/include/c++/14/bits/ostream_insert.h \
+  /usr/include/c++/14/bits/parse_numbers.h \
+  /usr/include/c++/14/bits/postypes.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/quoted_string.h \
+  /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/ranges_algobase.h \
+  /usr/include/c++/14/bits/ranges_base.h \
+  /usr/include/c++/14/bits/ranges_cmp.h \
+  /usr/include/c++/14/bits/ranges_util.h \
+  /usr/include/c++/14/bits/refwrap.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/shared_ptr.h \
+  /usr/include/c++/14/bits/shared_ptr_base.h \
+  /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/sstream.tcc \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/stl_algo.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
+  /usr/include/c++/14/bits/stl_construct.h \
+  /usr/include/c++/14/bits/stl_function.h \
+  /usr/include/c++/14/bits/stl_heap.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_relops.h \
+  /usr/include/c++/14/bits/stl_tempbuf.h \
+  /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/streambuf.tcc \
+  /usr/include/c++/14/bits/streambuf_iterator.h \
+  /usr/include/c++/14/bits/string_view.tcc \
+  /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/unicode-data.h \
+  /usr/include/c++/14/bits/unicode.h \
+  /usr/include/c++/14/bits/uniform_int_dist.h \
+  /usr/include/c++/14/bits/unique_ptr.h \
+  /usr/include/c++/14/bits/uses_allocator.h \
+  /usr/include/c++/14/bits/uses_allocator_args.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cctype \
+  /usr/include/c++/14/cerrno \
+  /usr/include/c++/14/charconv \
+  /usr/include/c++/14/chrono \
+  /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
+  /usr/include/c++/14/compare \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdint \
+  /usr/include/c++/14/cstdio \
+  /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cstring \
+  /usr/include/c++/14/ctime \
+  /usr/include/c++/14/cwchar \
+  /usr/include/c++/14/cwctype \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/exception \
+  /usr/include/c++/14/ext/aligned_buffer.h \
+  /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/atomicity.h \
+  /usr/include/c++/14/ext/concurrence.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/string_conversions.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/format \
+  /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/iomanip \
+  /usr/include/c++/14/ios \
+  /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/iostream \
+  /usr/include/c++/14/istream \
+  /usr/include/c++/14/limits \
+  /usr/include/c++/14/locale \
+  /usr/include/c++/14/new \
+  /usr/include/c++/14/numbers \
+  /usr/include/c++/14/optional \
+  /usr/include/c++/14/ostream \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/ratio \
+  /usr/include/c++/14/span \
+  /usr/include/c++/14/sstream \
+  /usr/include/c++/14/stdexcept \
+  /usr/include/c++/14/streambuf \
+  /usr/include/c++/14/string \
+  /usr/include/c++/14/string_view \
+  /usr/include/c++/14/system_error \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
+  /usr/include/c++/14/tuple \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/utility \
+  /usr/include/c++/14/variant \
+  /usr/include/c++/14/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/fcntl.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/libintl.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/falloc.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/signal.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/unistd.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/environments.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+  /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+  /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+  /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+  /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h \
+  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/sigstksz.h \
+  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+  /usr/include/x86_64-linux-gnu/bits/ss_flags.h \
+  /usr/include/x86_64-linux-gnu/bits/stat.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/idtype_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/stack_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/messages_members.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+  /usr/include/x86_64-linux-gnu/sys/wait.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
+  /usr/lib/linux/uapi/x86/asm/bitsperlong.h \
+  /usr/lib/linux/uapi/x86/asm/errno.h \
+  /usr/lib/linux/uapi/x86/asm/posix_types.h \
+  /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
+  /usr/lib/linux/uapi/x86/asm/types.h
+
+games/angry_chess/CMakeFiles/angry_chess.dir/notation/Fen/FenParser.cpp.o: /home/r/game/games/angry_chess/notation/Fen/FenParser.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/FenParser.hpp \
+  /home/r/game/games/angry_chess/notation/Fen/FenParser.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -600,207 +934,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/FenParser.cpp.o: /home/r/game/games
   /usr/lib/linux/uapi/x86/asm/posix_types_64.h \
   /usr/lib/linux/uapi/x86/asm/types.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/ai/ChessEvaluator.cpp.o: /home/r/game/games/angry_chess/ai/ChessEvaluator.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop/Bishop.cpp.o: /home/r/game/games/angry_chess/pieces/Bishop/Bishop.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/ai/ChessEvaluator.hpp \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/specfun.h \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/cmath \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/tr1/bessel_function.tcc \
-  /usr/include/c++/14/tr1/beta_function.tcc \
-  /usr/include/c++/14/tr1/ell_integral.tcc \
-  /usr/include/c++/14/tr1/exp_integral.tcc \
-  /usr/include/c++/14/tr1/gamma.tcc \
-  /usr/include/c++/14/tr1/hypergeometric.tcc \
-  /usr/include/c++/14/tr1/legendre_function.tcc \
-  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/14/tr1/poly_hermite.tcc \
-  /usr/include/c++/14/tr1/poly_laguerre.tcc \
-  /usr/include/c++/14/tr1/riemann_zeta.tcc \
-  /usr/include/c++/14/tr1/special_function_util.h \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/utility \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
-  /usr/lib/linux/uapi/x86/asm/errno.h
-
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o: /home/r/game/games/angry_chess/pieces/Bishop.cpp \
-  /home/r/game/engine/board/BoardState.hpp \
-  /home/r/game/engine/core/Types.hpp \
-  /home/r/game/engine/rules/Move.hpp \
-  /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Bishop.hpp \
+  /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -995,12 +1134,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Bishop.cpp.o: /home/r/game/g
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/linux/uapi/x86/asm/errno.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o: /home/r/game/games/angry_chess/pieces/King.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King/King.cpp.o: /home/r/game/games/angry_chess/pieces/King/King.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/King.hpp \
+  /home/r/game/games/angry_chess/pieces/King/King.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1195,12 +1334,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/pieces/King.cpp.o: /home/r/game/gam
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/linux/uapi/x86/asm/errno.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o: /home/r/game/games/angry_chess/pieces/Knight.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight/Knight.cpp.o: /home/r/game/games/angry_chess/pieces/Knight/Knight.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Knight.hpp \
+  /home/r/game/games/angry_chess/pieces/Knight/Knight.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1395,12 +1534,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Knight.cpp.o: /home/r/game/g
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/linux/uapi/x86/asm/errno.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o: /home/r/game/games/angry_chess/pieces/Pawn.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn/Pawn.cpp.o: /home/r/game/games/angry_chess/pieces/Pawn/Pawn.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Pawn.hpp \
+  /home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1595,14 +1734,14 @@ games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Pawn.cpp.o: /home/r/game/gam
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/linux/uapi/x86/asm/errno.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o: /home/r/game/games/angry_chess/pieces/Queen.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen/Queen.cpp.o: /home/r/game/games/angry_chess/pieces/Queen/Queen.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Bishop.hpp \
-  /home/r/game/games/angry_chess/pieces/Queen.hpp \
-  /home/r/game/games/angry_chess/pieces/Rook.hpp \
+  /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
+  /home/r/game/games/angry_chess/pieces/Queen/Queen.hpp \
+  /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1797,213 +1936,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Queen.cpp.o: /home/r/game/ga
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/linux/uapi/x86/asm/errno.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook.cpp.o: /home/r/game/games/angry_chess/pieces/Rook.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/pieces/Rook/Rook.cpp.o: /home/r/game/games/angry_chess/pieces/Rook/Rook.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Rook.hpp \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/c++/14/array \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/basic_string.h \
-  /usr/include/c++/14/bits/basic_string.tcc \
-  /usr/include/c++/14/bits/char_traits.h \
-  /usr/include/c++/14/bits/charconv.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/cxxabi_forced.h \
-  /usr/include/c++/14/bits/cxxabi_init_exception.h \
-  /usr/include/c++/14/bits/enable_special_members.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/exception_ptr.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/localefwd.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/nested_exception.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/ostream_insert.h \
-  /usr/include/c++/14/bits/postypes.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/specfun.h \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_relops.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/string_view.tcc \
-  /usr/include/c++/14/bits/stringfwd.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/cerrno \
-  /usr/include/c++/14/clocale \
-  /usr/include/c++/14/cmath \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdint \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/cwchar \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/exception \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/string_conversions.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/iosfwd \
-  /usr/include/c++/14/limits \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/optional \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/string \
-  /usr/include/c++/14/string_view \
-  /usr/include/c++/14/tr1/bessel_function.tcc \
-  /usr/include/c++/14/tr1/beta_function.tcc \
-  /usr/include/c++/14/tr1/ell_integral.tcc \
-  /usr/include/c++/14/tr1/exp_integral.tcc \
-  /usr/include/c++/14/tr1/gamma.tcc \
-  /usr/include/c++/14/tr1/hypergeometric.tcc \
-  /usr/include/c++/14/tr1/legendre_function.tcc \
-  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/14/tr1/poly_hermite.tcc \
-  /usr/include/c++/14/tr1/poly_laguerre.tcc \
-  /usr/include/c++/14/tr1/riemann_zeta.tcc \
-  /usr/include/c++/14/tr1/special_function_util.h \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/typeinfo \
-  /usr/include/c++/14/utility \
-  /usr/include/c++/14/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/linux/errno.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
-  /usr/lib/linux/uapi/x86/asm/errno.h
-
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/CastlingRule.cpp.o: /home/r/game/games/angry_chess/rules/CastlingRule.cpp \
-  /home/r/game/engine/board/BoardState.hpp \
-  /home/r/game/engine/core/Types.hpp \
-  /home/r/game/engine/rules/Move.hpp \
-  /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/rules/CastlingRule.hpp \
-  /home/r/game/games/angry_chess/rules/CheckDetector.hpp \
+  /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2203,12 +2141,12 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/CheckDetector.cpp.o: /home/r/
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Bishop.hpp \
-  /home/r/game/games/angry_chess/pieces/King.hpp \
-  /home/r/game/games/angry_chess/pieces/Knight.hpp \
-  /home/r/game/games/angry_chess/pieces/Pawn.hpp \
-  /home/r/game/games/angry_chess/pieces/Queen.hpp \
-  /home/r/game/games/angry_chess/pieces/Rook.hpp \
+  /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
+  /home/r/game/games/angry_chess/pieces/King/King.hpp \
+  /home/r/game/games/angry_chess/pieces/Knight/Knight.hpp \
+  /home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp \
+  /home/r/game/games/angry_chess/pieces/Queen/Queen.hpp \
+  /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
   /home/r/game/games/angry_chess/rules/CheckDetector.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -2411,16 +2349,16 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o: /home/r/gam
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/engine/rules/MoveResult.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Bishop.hpp \
-  /home/r/game/games/angry_chess/pieces/King.hpp \
-  /home/r/game/games/angry_chess/pieces/Knight.hpp \
-  /home/r/game/games/angry_chess/pieces/Pawn.hpp \
-  /home/r/game/games/angry_chess/pieces/Queen.hpp \
-  /home/r/game/games/angry_chess/pieces/Rook.hpp \
-  /home/r/game/games/angry_chess/rules/CastlingRule.hpp \
+  /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
+  /home/r/game/games/angry_chess/pieces/King/King.hpp \
+  /home/r/game/games/angry_chess/pieces/Knight/Knight.hpp \
+  /home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp \
+  /home/r/game/games/angry_chess/pieces/Queen/Queen.hpp \
+  /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
   /home/r/game/games/angry_chess/rules/CheckDetector.hpp \
   /home/r/game/games/angry_chess/rules/ChessRules.hpp \
-  /home/r/game/games/angry_chess/rules/ChessWinCondition.hpp \
+  /home/r/game/games/angry_chess/rules/movement/CastlingRule.hpp \
+  /home/r/game/games/angry_chess/rules/win/ChessWinCondition.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2615,20 +2553,221 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessRules.cpp.o: /home/r/gam
   /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
   /usr/lib/linux/uapi/x86/asm/errno.h
 
-games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /home/r/game/games/angry_chess/rules/ChessWinCondition.cpp \
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/movement/CastlingRule.cpp.o: /home/r/game/games/angry_chess/rules/movement/CastlingRule.cpp \
   /home/r/game/engine/board/BoardState.hpp \
   /home/r/game/engine/core/Types.hpp \
   /home/r/game/engine/rules/Move.hpp \
   /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
-  /home/r/game/games/angry_chess/pieces/Bishop.hpp \
-  /home/r/game/games/angry_chess/pieces/King.hpp \
-  /home/r/game/games/angry_chess/pieces/Knight.hpp \
-  /home/r/game/games/angry_chess/pieces/Pawn.hpp \
-  /home/r/game/games/angry_chess/pieces/Queen.hpp \
-  /home/r/game/games/angry_chess/pieces/Rook.hpp \
-  /home/r/game/games/angry_chess/rules/CastlingRule.hpp \
   /home/r/game/games/angry_chess/rules/CheckDetector.hpp \
-  /home/r/game/games/angry_chess/rules/ChessWinCondition.hpp \
+  /home/r/game/games/angry_chess/rules/movement/CastlingRule.hpp \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/c++/14/array \
+  /usr/include/c++/14/backward/binders.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/basic_string.h \
+  /usr/include/c++/14/bits/basic_string.tcc \
+  /usr/include/c++/14/bits/char_traits.h \
+  /usr/include/c++/14/bits/charconv.h \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/cxxabi_forced.h \
+  /usr/include/c++/14/bits/cxxabi_init_exception.h \
+  /usr/include/c++/14/bits/enable_special_members.h \
+  /usr/include/c++/14/bits/exception.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/exception_ptr.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/invoke.h \
+  /usr/include/c++/14/bits/iterator_concepts.h \
+  /usr/include/c++/14/bits/localefwd.h \
+  /usr/include/c++/14/bits/max_size_type.h \
+  /usr/include/c++/14/bits/memory_resource.h \
+  /usr/include/c++/14/bits/memoryfwd.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/nested_exception.h \
+  /usr/include/c++/14/bits/new_allocator.h \
+  /usr/include/c++/14/bits/ostream_insert.h \
+  /usr/include/c++/14/bits/postypes.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/ranges_base.h \
+  /usr/include/c++/14/bits/ranges_cmp.h \
+  /usr/include/c++/14/bits/ranges_util.h \
+  /usr/include/c++/14/bits/refwrap.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/specfun.h \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
+  /usr/include/c++/14/bits/stl_construct.h \
+  /usr/include/c++/14/bits/stl_function.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_relops.h \
+  /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/string_view.tcc \
+  /usr/include/c++/14/bits/stringfwd.h \
+  /usr/include/c++/14/bits/uses_allocator.h \
+  /usr/include/c++/14/bits/uses_allocator_args.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cctype \
+  /usr/include/c++/14/cerrno \
+  /usr/include/c++/14/clocale \
+  /usr/include/c++/14/cmath \
+  /usr/include/c++/14/compare \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdint \
+  /usr/include/c++/14/cstdio \
+  /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cwchar \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/exception \
+  /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/string_conversions.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/iosfwd \
+  /usr/include/c++/14/limits \
+  /usr/include/c++/14/new \
+  /usr/include/c++/14/numbers \
+  /usr/include/c++/14/optional \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/string \
+  /usr/include/c++/14/string_view \
+  /usr/include/c++/14/tr1/bessel_function.tcc \
+  /usr/include/c++/14/tr1/beta_function.tcc \
+  /usr/include/c++/14/tr1/ell_integral.tcc \
+  /usr/include/c++/14/tr1/exp_integral.tcc \
+  /usr/include/c++/14/tr1/gamma.tcc \
+  /usr/include/c++/14/tr1/hypergeometric.tcc \
+  /usr/include/c++/14/tr1/legendre_function.tcc \
+  /usr/include/c++/14/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/14/tr1/poly_hermite.tcc \
+  /usr/include/c++/14/tr1/poly_laguerre.tcc \
+  /usr/include/c++/14/tr1/riemann_zeta.tcc \
+  /usr/include/c++/14/tr1/special_function_util.h \
+  /usr/include/c++/14/tuple \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/typeinfo \
+  /usr/include/c++/14/utility \
+  /usr/include/c++/14/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/linux/errno.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/14/include/stdint.h \
+  /usr/lib/linux/uapi/x86/asm/errno.h
+
+games/angry_chess/CMakeFiles/angry_chess.dir/rules/win/ChessWinCondition.cpp.o: /home/r/game/games/angry_chess/rules/win/ChessWinCondition.cpp \
+  /home/r/game/engine/board/BoardState.hpp \
+  /home/r/game/engine/core/Types.hpp \
+  /home/r/game/engine/rules/Move.hpp \
+  /home/r/game/games/angry_chess/ChessPieceTypes.hpp \
+  /home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp \
+  /home/r/game/games/angry_chess/pieces/King/King.hpp \
+  /home/r/game/games/angry_chess/pieces/Knight/Knight.hpp \
+  /home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp \
+  /home/r/game/games/angry_chess/pieces/Queen/Queen.hpp \
+  /home/r/game/games/angry_chess/pieces/Rook/Rook.hpp \
+  /home/r/game/games/angry_chess/rules/CheckDetector.hpp \
+  /home/r/game/games/angry_chess/rules/movement/CastlingRule.hpp \
+  /home/r/game/games/angry_chess/rules/win/ChessWinCondition.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2824,33 +2963,71 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
   /usr/lib/linux/uapi/x86/asm/errno.h
 
 
-/home/r/game/games/angry_chess/rules/ChessWinCondition.cpp:
+/home/r/game/games/angry_chess/rules/win/ChessWinCondition.cpp:
 
-/home/r/game/games/angry_chess/rules/ChessWinCondition.hpp:
+/home/r/game/games/angry_chess/rules/win/ChessWinCondition.hpp:
+
+/home/r/game/games/angry_chess/rules/movement/CastlingRule.hpp:
 
 /home/r/game/games/angry_chess/rules/ChessRules.cpp:
 
 /home/r/game/games/angry_chess/rules/CheckDetector.hpp:
 
-/home/r/game/games/angry_chess/pieces/Rook.cpp:
+/home/r/game/games/angry_chess/pieces/Rook/Rook.hpp:
 
-/home/r/game/games/angry_chess/pieces/Queen.hpp:
+/home/r/game/games/angry_chess/pieces/Queen/Queen.hpp:
 
-/home/r/game/games/angry_chess/pieces/Pawn.hpp:
+/home/r/game/games/angry_chess/pieces/Queen/Queen.cpp:
 
-/home/r/game/games/angry_chess/pieces/Knight.cpp:
+/home/r/game/games/angry_chess/pieces/Pawn/Pawn.hpp:
 
-/home/r/game/games/angry_chess/pieces/Bishop.hpp:
+/home/r/game/games/angry_chess/pieces/King/King.hpp:
 
-/home/r/game/games/angry_chess/pieces/Bishop.cpp:
+/home/r/game/games/angry_chess/pieces/King/King.cpp:
 
-/home/r/game/games/angry_chess/ai/ChessEvaluator.cpp:
+/home/r/game/games/angry_chess/pieces/Bishop/Bishop.hpp:
 
-/home/r/game/games/angry_chess/FenParser.cpp:
+/home/r/game/games/angry_chess/pieces/Bishop/Bishop.cpp:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/stack_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo-arch.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
+
+/usr/include/strings.h:
+
+/usr/include/signal.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/c++/14/cstring:
 
 /usr/lib/linux/uapi/x86/asm/unistd_64.h:
 
 /usr/lib/linux/uapi/x86/asm/posix_types.h:
+
+/home/r/game/games/angry_chess/pieces/Pawn/Pawn.cpp:
 
 /usr/lib/linux/uapi/x86/asm/bitsperlong.h:
 
@@ -2872,8 +3049,6 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h:
-
 /usr/include/x86_64-linux-gnu/c++/14/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -2883,6 +3058,10 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /usr/include/x86_64-linux-gnu/c++/14/bits/error_constants.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/c++locale.h:
 
@@ -2928,6 +3107,8 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
@@ -2938,7 +3119,7 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/home/r/game/games/angry_chess/pieces/King.cpp:
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/c++/14/bits/cpu_defines.h:
 
@@ -2962,11 +3143,21 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/home/r/game/games/angry_chess/ai/ChessEvaluator.hpp:
+/usr/include/c++/14/bits/uniform_int_dist.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/c++/14/vector:
+
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/usr/include/c++/14/bits/shared_ptr_base.h:
+
+/usr/include/c++/14/tr1/beta_function.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -2980,6 +3171,8 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/bits/stl_iterator.h:
 
+/usr/include/x86_64-linux-gnu/sys/wait.h:
+
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/c++/14/bits/stl_algobase.h:
@@ -2990,11 +3183,15 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/charconv:
 
+/home/r/game/games/angry_chess/rules/movement/CastlingRule.cpp:
+
 /usr/include/c++/14/functional:
 
 /usr/include/c++/14/pstl/pstl_config.h:
 
 /usr/include/c++/14/bits/requires_hosted.h:
+
+/usr/include/c++/14/iostream:
 
 /usr/include/c++/14/bits/refwrap.h:
 
@@ -3003,8 +3200,6 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /home/r/game/engine/board/BoardState.hpp:
 
 /usr/include/wchar.h:
-
-/home/r/game/games/angry_chess/pieces/Rook.hpp:
 
 /usr/include/c++/14/bits/ranges_base.h:
 
@@ -3019,6 +3214,8 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /usr/include/asm-generic/errno.h:
 
 /usr/include/syscall.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /home/r/game/games/angry_chess/AngryChessPlugin.hpp:
 
@@ -3050,11 +3247,23 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/bits/localefwd.h:
 
+/usr/include/c++/14/bits/unique_ptr.h:
+
 /home/r/game/games/angry_chess/AngryChessPlugin.cpp:
+
+/usr/include/x86_64-linux-gnu/c++/14/bits/time_members.h:
+
+/home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
 /usr/include/c++/14/bits/streambuf.tcc:
+
+/usr/include/c++/14/backward/auto_ptr.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -3078,11 +3287,41 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/bits/char_traits.h:
 
+/usr/include/c++/14/bits/shared_ptr.h:
+
+/usr/include/unistd.h:
+
 /usr/include/c++/14/cstdlib:
 
 /usr/include/c++/14/system_error:
 
 /usr/include/c++/14/cwchar:
+
+/usr/include/c++/14/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/14/bits/ptr_traits.h:
+
+/usr/include/alloca.h:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/14/tr1/bessel_function.tcc:
+
+/home/r/game/games/angry_chess/ai/StockfishAI/StockfishAI.cpp:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/14/bits/cxxabi_init_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/syscall.h:
+
+/usr/include/c++/14/string_view:
+
+/usr/include/c++/14/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/14/bits/std_function.h:
+
+/usr/include/c++/14/bits/enable_special_members.h:
 
 /usr/include/c++/14/bits/ranges_cmp.h:
 
@@ -3096,39 +3335,27 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/sstream:
 
+/usr/include/c++/14/bits/shared_ptr_atomic.h:
+
+/home/r/game/engine/rules/MoveResult.hpp:
+
+/usr/include/c++/14/bits/charconv.h:
+
+/usr/include/c++/14/bits/basic_ios.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/14/bits/iterator_concepts.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/usr/include/c++/14/pstl/glue_memory_defs.h:
+
 /usr/include/c++/14/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/14/bits/basic_ios.h:
 
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/14/tr1/bessel_function.tcc:
-
-/usr/include/stdc-predef.h:
-
-/home/r/game/engine/rules/MoveResult.hpp:
-
-/usr/include/c++/14/bits/shared_ptr_atomic.h:
-
-/home/r/game/engine/rules/Move.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/c++/14/bits/unicode-data.h:
-
-/usr/include/c++/14/locale:
-
-/usr/include/c++/14/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/14/bits/ptr_traits.h:
-
-/usr/include/alloca.h:
-
-/usr/include/c++/14/bits/shared_ptr.h:
-
-/usr/include/unistd.h:
-
-/usr/include/c++/14/backward/auto_ptr.h:
+/usr/include/c++/14/array:
 
 /usr/include/c++/14/bits/string_view.tcc:
 
@@ -3138,65 +3365,25 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/bit:
 
-/home/r/game/games/angry_chess/pieces/Queen.cpp:
-
 /usr/include/c++/14/bits/std_mutex.h:
 
-/home/r/game/engine/ai/MinimaxAI.hpp:
-
 /home/r/game/engine/input/ConsoleInputHandler.hpp:
-
-/usr/include/c++/14/bits/cxxabi_init_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/syscall.h:
-
-/usr/include/c++/14/string_view:
-
-/home/r/game/games/angry_chess/pieces/Pawn.cpp:
-
-/usr/include/c++/14/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/14/bits/std_function.h:
-
-/usr/include/c++/14/bits/enable_special_members.h:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/home/r/game/engine/ai/RandomAI.hpp:
-
-/usr/include/c++/14/tr1/beta_function.tcc:
-
-/usr/include/c++/14/bits/shared_ptr_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/c++/14/bits/uniform_int_dist.h:
-
-/usr/include/c++/14/vector:
-
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
-
-/home/r/game/games/angry_chess/pieces/King.hpp:
-
-/home/r/game/engine/core/PluginRegistry.hpp:
-
-/usr/include/c++/14/tuple:
 
 /usr/include/c++/14/ios:
 
 /usr/include/asm-generic/int-ll64.h:
 
+/home/r/game/engine/core/PluginRegistry.hpp:
+
+/usr/include/c++/14/tuple:
+
 /usr/lib/linux/uapi/x86/asm/posix_types_64.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/home/r/game/games/angry_chess/rules/CastlingRule.hpp:
-
 /usr/include/c++/14/bits/locale_conv.h:
+
+/usr/include/x86_64-linux-gnu/bits/fcntl.h:
 
 /usr/include/c++/14/iosfwd:
 
@@ -3206,21 +3393,11 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/bits/stl_iterator_base_funcs.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
+
 /home/r/game/engine/renderer/ConsoleRenderer.hpp:
 
-/usr/include/c++/14/bits/functexcept.h:
-
-/usr/include/pthread.h:
-
-/usr/include/c++/14/bits/ostream.tcc:
-
-/usr/include/c++/14/ext/aligned_buffer.h:
-
-/usr/include/c++/14/bits/align.h:
-
-/usr/include/c++/14/bits/concept_check.h:
-
-/usr/include/c++/14/bits/cpp_type_traits.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/c++/14/bits/locale_facets_nonio.h:
 
@@ -3236,11 +3413,15 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/stdio.h:
 
-/home/r/game/games/angry_chess/rules/CastlingRule.cpp:
-
 /usr/include/c++/14/bits/exception_ptr.h:
 
-/usr/include/c++/14/array:
+/home/r/game/engine/rules/Move.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/c++/14/bits/unicode-data.h:
+
+/usr/include/c++/14/locale:
 
 /usr/include/c++/14/backward/binders.h:
 
@@ -3274,7 +3455,11 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/stdint.h:
 
+/usr/include/string.h:
+
 /usr/include/c++/14/bits/allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_stat.h:
 
 /usr/include/c++/14/bits/stl_uninitialized.h:
 
@@ -3308,17 +3493,9 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/bits/istream.tcc:
 
+/usr/include/x86_64-linux-gnu/bits/types/idtype_t.h:
+
 /usr/include/c++/14/bits/codecvt.h:
-
-/usr/include/c++/14/bits/charconv.h:
-
-/usr/include/c++/14/bits/basic_ios.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/c++/14/bits/iterator_concepts.h:
-
-/usr/include/c++/14/pstl/glue_memory_defs.h:
 
 /usr/include/c++/14/bits/stl_vector.h:
 
@@ -3338,7 +3515,19 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/tr1/riemann_zeta.tcc:
 
+/usr/include/c++/14/bits/cpp_type_traits.h:
+
+/usr/include/c++/14/bits/ostream.tcc:
+
+/usr/include/c++/14/ext/aligned_buffer.h:
+
+/usr/include/c++/14/bits/align.h:
+
+/usr/include/c++/14/bits/concept_check.h:
+
 /usr/include/c++/14/bits/erase_if.h:
+
+/home/r/game/games/angry_chess/pieces/Rook/Rook.cpp:
 
 /usr/include/c++/14/numbers:
 
@@ -3356,7 +3545,9 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/c++/14/bits/unique_ptr.h:
+/usr/include/c++/14/bits/functexcept.h:
+
+/usr/include/pthread.h:
 
 /usr/include/c++/14/bits/unordered_map.h:
 
@@ -3376,8 +3567,6 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/cerrno:
 
-/home/r/game/games/angry_chess/pieces/Knight.hpp:
-
 /usr/include/c++/14/climits:
 
 /usr/include/c++/14/string:
@@ -3389,6 +3578,10 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /usr/include/c++/14/ostream:
 
 /usr/include/c++/14/compare:
+
+/usr/include/x86_64-linux-gnu/bits/stat.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstksz.h:
 
 /usr/include/c++/14/concepts:
 
@@ -3405,6 +3598,8 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /usr/include/c++/14/ext/numeric_traits.h:
 
 /usr/include/c++/14/ctime:
+
+/home/r/game/games/angry_chess/pieces/Knight/Knight.hpp:
 
 /usr/include/c++/14/cwctype:
 
@@ -3438,9 +3633,9 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/initializer_list:
 
-/usr/include/c++/14/bits/functional_hash.h:
-
 /usr/include/c++/14/limits:
+
+/usr/include/c++/14/bits/functional_hash.h:
 
 /usr/include/c++/14/iomanip:
 
@@ -3451,6 +3646,8 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /usr/include/c++/14/bits/stl_function.h:
 
 /usr/include/c++/14/memory:
+
+/home/r/game/games/angry_chess/pieces/Knight/Knight.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -3480,9 +3677,13 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
 /usr/include/c++/14/debug/debug.h:
 
 /usr/include/c++/14/tr1/hypergeometric.tcc:
+
+/home/r/game/games/angry_chess/notation/Fen/FenParser.hpp:
 
 /usr/include/c++/14/tr1/modified_bessel_func.tcc:
 
@@ -3490,9 +3691,13 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/c++/14/tr1/special_function_util.h:
 
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/c++/14/type_traits:
+
+/home/r/game/games/angry_chess/notation/Fen/FenParser.cpp:
 
 /usr/include/c++/14/unordered_map:
 
@@ -3528,9 +3733,9 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/home/r/game/engine/theme/ITheme.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/home/r/game/engine/theme/ITheme.hpp:
 
 /usr/include/time.h:
 
@@ -3557,6 +3762,8 @@ games/angry_chess/CMakeFiles/angry_chess.dir/rules/ChessWinCondition.cpp.o: /hom
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/usr/include/linux/falloc.h:
 
 /usr/include/c++/14/bits/allocated_ptr.h:
 
